@@ -1,8 +1,8 @@
 ________________________________________________![IMG-20230613-WA0014](https://github.com/HailChefcito/Chefcito/assets/124916979/984139d2-be65-44f1-8411-f72f4d9273eb) ____________________________________________
- # 😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂Chefcito 😂😂😂😂😂😂😂😂😂😂😂😂
+ # Chefcito 
 
 
-* # INTRODUCCIÓN:
+* # Introducción:
   
   Generar un sistema de compras online en lo que respecta de productos alimenticios, ya sean empaquetados o platos a la carta, 
   para que las personas tengan la facilidad de ordenar desde la comodidad de su hogar, dicho sistema de negocio está siendo 
