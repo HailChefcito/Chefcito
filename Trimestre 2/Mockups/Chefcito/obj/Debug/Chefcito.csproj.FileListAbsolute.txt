@@ -1,0 +1,11 @@
+D:\MockUp\Chefcito\Chefcito\bin\Debug\Chefcito.exe.config
+D:\MockUp\Chefcito\Chefcito\bin\Debug\Chefcito.exe
+D:\MockUp\Chefcito\Chefcito\bin\Debug\Chefcito.pdb
+D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.csprojResolveAssemblyReference.cache
+D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.FormLogin.resources
+D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.Properties.Resources.resources
+D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.csproj.GenerateResource.Cache
+D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.exe
+D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.pdb
+D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.FormPassword.resources
+D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.FormRegister.resources
