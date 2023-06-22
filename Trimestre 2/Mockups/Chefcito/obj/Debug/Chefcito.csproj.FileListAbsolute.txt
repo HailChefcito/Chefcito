@@ -9,3 +9,17 @@ D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.exe
 D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.pdb
 D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.FormPassword.resources
 D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.FormRegister.resources
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\bin\Debug\Chefcito.exe.config
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.exe
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.pdb
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\bin\Debug\Chefcito.exe
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\bin\Debug\Chefcito.pdb
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.csprojResolveAssemblyReference.cache
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormLogin.resources
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormPassword.resources
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormRegister.resources
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.Properties.Resources.resources
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.csproj.GenerateResource.Cache
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormRecPassword.resources
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormIndex.resources
+C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.Nohaynada.resources

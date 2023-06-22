@@ -36,5 +36,19 @@ namespace Chefcito
         {
 
         }
+
+        private void BtnRegister_Click(object sender, EventArgs e)
+        {
+            FormPassword Pass = new FormPassword();
+            this.Hide();
+            Pass.Show();
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            FormLogin Back = new FormLogin();
+            this.Hide();
+            Back.Show();
+        }
     }
 }

@@ -34,17 +34,24 @@ namespace Chefcito
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FormIndex Ind = new FormIndex();
+            this.Hide();
+            Ind.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            FormRecPassword Rec = new FormRecPassword();
+            this.Hide();
+            Rec.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            FormRegister ForRegs = new FormRegister();
+            this.Hide();
+            ForRegs.Show();
+            
         }
     }
 }

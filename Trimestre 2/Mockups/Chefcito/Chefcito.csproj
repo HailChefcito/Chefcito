@@ -50,11 +50,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIndex.Designer.cs">
+      <DependentUpon>FormIndex.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormPassword.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormPassword.Designer.cs">
       <DependentUpon>FormPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecPassword.Designer.cs">
+      <DependentUpon>FormRecPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRegister.cs">
       <SubType>Form</SubType>
@@ -62,16 +74,31 @@
     <Compile Include="FormRegister.Designer.cs">
       <DependentUpon>FormRegister.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nohaynada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nohaynada.Designer.cs">
+      <DependentUpon>Nohaynada.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormIndex.resx">
+      <DependentUpon>FormIndex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPassword.resx">
       <DependentUpon>FormPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormRecPassword.resx">
+      <DependentUpon>FormRecPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormRegister.resx">
       <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nohaynada.resx">
+      <DependentUpon>Nohaynada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,6 +125,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\IMG-20230613-WA0025.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_fresh_covered_dish_icon_189083.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkIten.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back Door.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

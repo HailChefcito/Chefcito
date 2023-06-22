@@ -39,6 +39,7 @@
             // BtnSave
             // 
             this.BtnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(105)))), ((int)(((byte)(77)))));
+            this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSave.ForeColor = System.Drawing.SystemColors.ControlText;
             this.BtnSave.Location = new System.Drawing.Point(536, 390);
             this.BtnSave.Name = "BtnSave";
@@ -85,11 +86,13 @@
             // 
             // BtnBack
             // 
+            this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnBack.Location = new System.Drawing.Point(422, 396);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(23, 23);
             this.BtnBack.TabIndex = 16;
             this.BtnBack.UseVisualStyleBackColor = true;
+            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // FormPassword
             // 

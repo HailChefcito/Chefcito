@@ -16,5 +16,12 @@ namespace Chefcito
         {
             InitializeComponent();
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            FormRegister Back = new FormRegister();
+            this.Hide();
+            Back.Show();
+        }
     }
 }
