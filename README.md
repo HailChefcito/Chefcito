@@ -3,10 +3,8 @@
 
 ## Introducción:
   
-  Generar un sistema de compras online en lo que respecta de productos alimenticios, ya sean empaquetados o platos a la carta, <br>
-  para que las personas tengan la facilidad de ordenar desde la comodidad de su hogar, dicho sistema de negocio está siendo <br>
-  administrado por seis personas, encargadas del mantenimiento en general de la página, de la creación y generación de los <br>
-  alimentos, y el mantenimiento de los electrodomésticos utilizados entre las áreas de cocina.
+  Generar un sistema de compras online en lo que respecta de productos alimenticios, ya sean empaquetados o platos a la carta, para que las personas tengan la facilidad de ordenar desde la comodidad de su hogar, dicho sistema de negocio está siendo <br>
+  administrado por seis personas, encargadas del mantenimiento en general de la página, de la creación y generación de los alimentos, y el mantenimiento de los electrodomésticos utilizados entre las áreas de cocina.
   
 ## Planteamiento del problema:
 
@@ -35,8 +33,7 @@
 ## Objetivos generales:
 
   Generar un aplicativo web que permita a los usuarios, dentro de un restaurante multitemático, pedir su orden persona por <br>
-  persona, organizar todos los productos incluso por secciones culturales y un presupuesto personal y por mesa; <br>
-  se muestra la disponibilidad de un plato, el tiempo 
+  persona, organizar todos los productos incluso por secciones culturales y un presupuesto personal y por mesa; se muestra la disponibilidad de un plato, el tiempo 
   estimado para su entrega, e incluso, si el cliente desea recibir la orden con un mensaje, esa opción está abierta al <br>
   público.
 
