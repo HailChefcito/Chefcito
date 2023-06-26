@@ -8,34 +8,23 @@
   
 ## Planteamiento del problema:
 
-  la idea surge en el momento de tener en cuenta un servicio de camarería, donde el aplicativo cumple la función de guardar <br>
-  dato por dato de cada pedido de un restaurante, organizando cada cosa y cumpliendo el aplicativo la función de carta del día <br>
-  (en caso de que en el día existan menús como de fin de semana). Al mismo tiempo el problema consta en el servicio de entrega <br>
-  de alimentos a los hogares, ya que en algunos casos los productos llegan fríos o los pedidos se confunden.
+  la idea surge en el momento de tener en cuenta un servicio de camarería, donde el aplicativo cumple la función de guardar dato por dato de cada pedido de un restaurante, organizando cada cosa y cumpliendo el aplicativo la función de carta del día 
+  (en caso de que en el día existan menús como de fin de semana). Al mismo tiempo el problema consta en el servicio de entrega de alimentos a los hogares, ya que en algunos casos los productos llegan fríos o los pedidos se confunden.
 
 ## Alcance de proyecto:
 
-  A la hora en que nuestro usuario se registra en nuestra página web, se le ofrece un menú con una gran variedad de platos <br>
-  donde el usuario va a poder comprar con mayor seguridad independientemente use tarjeta o en efectivo. Además, al usuario <br>
-  después de un tiempo, se le van a mostrar las posibles preferencias de sus selecciones más preferidas o que suele ordenar <br>
-  de manera más seguida. A la hora de que el usuario haga su pedido, este se le va a preparar e inmediatamente se le envía <br>
-  a su residencia para que así él lo reciba fresco en el menor tiempo posible, si el usuario ve problemas de calidad en su <br>
-  producto, el usuario puede o recibir un reembolso o se le puede preparar otro plato pero corrigiendo los errores pasados, <br>
-  devolviendo el producto erróneo y dándonos a entender que falló en su producto para así generar un mejor servicio hacia <br>
-  los demás.
+  A la hora en que nuestro usuario se registra en nuestra página web, se le ofrece un menú con una gran variedad de platos donde el usuario va a poder comprar con mayor seguridad independientemente use tarjeta o en efectivo. Además, al usuario <br>
+  después de un tiempo, se le van a mostrar las posibles preferencias de sus selecciones más preferidas o que suele ordenar de manera más seguida. A la hora de que el usuario haga su pedido, este se le va a preparar e inmediatamente se le envía 
+  a su residencia para que así él lo reciba fresco en el menor tiempo posible, si el usuario ve problemas de calidad en su producto, el usuario puede o recibir un reembolso o se le puede preparar otro plato pero corrigiendo los errores pasados, <br>
+  devolviendo el producto erróneo y dándonos a entender que falló en su producto para así generar un mejor servicio hacia los demás.
 
 ## Justificación:
 
-  La realización del proyecto se basa en tener un sistema de venta a nivel Nacional, mejorando asi la calidad de los <br>
-  productos, medios de entrega, medios de pago, y sobre todo una mejor satisfacción para los clientes al usar este medio de <br>
-  compra online.
+  La realización del proyecto se basa en tener un sistema de venta a nivel Nacional, mejorando asi la calidad de los productos, medios de entrega, medios de pago, y sobre todo una mejor satisfacción para los clientes al usar este medio de compra online.
 
 ## Objetivos generales:
 
-  Generar un aplicativo web que permita a los usuarios, dentro de un restaurante multitemático, pedir su orden persona por <br>
-  persona, organizar todos los productos incluso por secciones culturales y un presupuesto personal y por mesa; se muestra la disponibilidad de un plato, el tiempo 
-  estimado para su entrega, e incluso, si el cliente desea recibir la orden con un mensaje, esa opción está abierta al <br>
-  público.
+  Generar un aplicativo web que permita a los usuarios, dentro de un restaurante multitemático, pedir su orden persona por persona, organizar todos los productos incluso por secciones culturales y un presupuesto personal y por mesa; se muestra la disponibilidad de un plato, el tiempo estimado para su entrega, e incluso, si el cliente desea recibir la orden con un mensaje, esa opción está abierta al público.
 
 ## Objetivos específicos:
 
