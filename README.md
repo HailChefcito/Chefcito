@@ -28,9 +28,9 @@
 
 ## Objetivos específicos:
 
-  * Desarrollar un aplicativo web para un restaurante el cual divide los productos que ofrece por sus diversas temáticas
-  * Guardar las órdenes clientes por clientes, por su mesa y el presupuesto de ella
-  * Se mostrará las disponibilidades de los platos
+  * Desarrollar un aplicativo web para un restaurante el cual divide los productos que ofrece por sus diversas temáticas.
+  * Guardar las órdenes clientes por clientes, por su mesa y el presupuesto de ella.
+  * Se mostrará las disponibilidades de los platos.
 
 
 
