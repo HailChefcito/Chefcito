@@ -47,6 +47,7 @@
             this.BtnSave.TabIndex = 15;
             this.BtnSave.Text = "GUARDAR";
             this.BtnSave.UseVisualStyleBackColor = false;
+            this.BtnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // LblConfirmPassword
             // 

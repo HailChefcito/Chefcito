@@ -23,5 +23,10 @@ namespace Chefcito
             this.Hide();
             Back.Show();
         }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

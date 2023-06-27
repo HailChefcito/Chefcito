@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\CConection.cs" />
+    <Compile Include="Class\UsuarioDAL.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
