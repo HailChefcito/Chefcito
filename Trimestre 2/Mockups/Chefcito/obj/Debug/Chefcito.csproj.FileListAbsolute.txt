@@ -9,6 +9,7 @@ D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.exe
 D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.pdb
 D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.FormPassword.resources
 D:\MockUp\Chefcito\Chefcito\obj\Debug\Chefcito.FormRegister.resources
+<<<<<<< Updated upstream
 C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\bin\Debug\Chefcito.exe.config
 C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.exe
 C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.pdb
@@ -23,3 +24,8 @@ C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\C
 C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormRecPassword.resources
 C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormIndex.resources
 C:\Users\SENA\Desktop\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.Nohaynada.resources
+=======
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\bin\Debug\Chefcito.exe.config
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.exe
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.pdb
+>>>>>>> Stashed changes
