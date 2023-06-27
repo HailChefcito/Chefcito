@@ -39,9 +39,17 @@ namespace Chefcito
 
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-            FormPassword Pass = new FormPassword();
-            this.Hide();
-            Pass.Show();
+           if(class.UsuarioDAL.CreateAccount(TbxName,TbxUserName, TbxPhone, TbxEmail)>0) 
+            {
+                FormPassword Pass = new FormPassword();
+                this.Hide();
+                Pass.Show();
+
+            }
+            else
+            
+                MessageBox.Show("Pana ocurrio un error");
+            
         }
 
         private void BtnBack_Click(object sender, EventArgs e)

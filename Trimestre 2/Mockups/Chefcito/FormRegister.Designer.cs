@@ -140,7 +140,7 @@
             this.BtnBack.Size = new System.Drawing.Size(23, 23);
             this.BtnBack.TabIndex = 17;
             this.BtnBack.UseVisualStyleBackColor = true;
-            this.BtnBack.Click += new System.EventHandler(this.BtnBack_Click);
+
             // 
             // panel1
             // 
