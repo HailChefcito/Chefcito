@@ -9,21 +9,19 @@ namespace Chefcito.Class
 {
     class AccountDAL
     {
-        public static int CreateAccount(string pName, string pUserName, string pEmail, string pPassword)
+        public static int CreateAccount(string pPhone, string pUserName, string pEmail, string pPassword)
         {
             int result = 0;
             SqlConnection conn = ClassConection.JoinConnection();
             {
-                SqlCommand command = new SqlCommand(string.Format("Insert into CuentaUsuario(IdTelefono, NombreUsuario, Email, Contraseña, RangoUsuario)values (Hashbytes('MD5','{0}'),'{1}',Hashbytes('MD5','{2}'),'{3}',Hashbytes('MD5','{4}'))", pName, pUserName, pEmail, pPassword), conn);
+                SqlCommand command = new SqlCommand(string.Format("Insert into CuentaUsuario(IdTelefono, NombreUsuario, Email, Contraseña)values (Hashbytes('MD5','{0}'),'{1}',Hashbytes('MD5','{2}'),Hashbytes('MD5','{3}'))", pPhone, pUserName, pEmail, pPassword), conn);
                 result = command.ExecuteNonQuery();
 
             } return result;
 
         }
-    }
 
-
-    public static int PassAccount(string pUserId, string pPassword)
+        public static int PassAccount(string pUserId, string pPassword)
         {
             int result = -1;
             SqlConnection conn = ClassConection.JoinConnection();
@@ -38,4 +36,6 @@ namespace Chefcito.Class
                 return result;
             }
         }
+    }
+
 }

@@ -60,6 +60,7 @@
             this.TbxUser.Name = "TbxUser";
             this.TbxUser.Size = new System.Drawing.Size(440, 13);
             this.TbxUser.TabIndex = 1;
+            this.TbxUser.TextChanged += new System.EventHandler(this.TbxUser_TextChanged);
             // 
             // LblPassword
             // 

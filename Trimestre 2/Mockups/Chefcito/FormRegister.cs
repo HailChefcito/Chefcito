@@ -39,16 +39,19 @@ namespace Chefcito
 
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-           if(class.UsuarioDAL.CreateAccount(TbxName,TbxUserName, TbxPhone, TbxEmail)>0) 
+            if (TbxPassword.Text == TbxConfirmPassword.Text)
             {
-                FormPassword Pass = new FormPassword();
-                this.Hide();
-                Pass.Show();
-
+                if (Class.AccountDAL.CreateAccount(TbxPhone.Text, TbxName.Text, TbxEmail.Text, TbxPassword.Text) > 0)
+                {
+                    MessageBox.Show("Bro tu cuenta fue creada con el exito de Dio");
+                }
+                else
+                {
+                    MessageBox.Show("Pana ocurrio un error");
+                }
             }
             else
-            
-                MessageBox.Show("Pana ocurrio un error");
+                MessageBox.Show("Pana las contraseñas no coinciden");
             
         }
 

@@ -34,9 +34,19 @@ namespace Chefcito
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormIndex Ind = new FormIndex();
-            this.Hide();
-            Ind.Show();
+            if (Class.AccountDAL.PassAccount(TbxUser.Text, TbxPassword.Text) > 0)
+            {
+                FormIndex Ind = new FormIndex();
+                this.Hide();
+                Ind.Show();
+            }
+            else
+                MessageBox.Show("Error en el nombre de usuario y/o en contraseña pa");
+            Nohaynada error = new Nohaynada();
+            error.Show();
+            
+            
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -55,6 +65,11 @@ namespace Chefcito
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TbxUser_TextChanged(object sender, EventArgs e)
         {
 
         }

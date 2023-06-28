@@ -11,7 +11,7 @@ namespace Chefcito.Class
     {
         public static SqlConnection JoinConnection()
         {
-            SqlConnection conn = new SqlConnection("Data source = Sworer\\SQLEXPRESS; Initial catalog=ChefsitoV2;integrated security = true");
+            SqlConnection conn = new SqlConnection("Data source = DESKTOP-R21HQD6\\SQLEXPRESS; Initial catalog=ChefsitoV2;integrated security = true");
             conn.Open();
 
             return conn;
