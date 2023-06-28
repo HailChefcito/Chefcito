@@ -51,7 +51,12 @@ namespace Chefcito
             FormRegister ForRegs = new FormRegister();
             this.Hide();
             ForRegs.Show();
-            
+
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

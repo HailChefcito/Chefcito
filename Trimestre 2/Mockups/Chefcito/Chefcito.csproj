@@ -140,6 +140,18 @@
   <ItemGroup>
     <None Include="Resources\Back Door.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UntitledBackgroundLogin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UntitledBackgroundRegister.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UntitledBackgroundpassword.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UntitledBackgroundIndex.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

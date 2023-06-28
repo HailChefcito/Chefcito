@@ -59,20 +59,20 @@
             // LblConfirmPassword
             // 
             this.LblConfirmPassword.AutoSize = true;
-            this.LblConfirmPassword.Font = new System.Drawing.Font("ISOCPEUR", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblConfirmPassword.Location = new System.Drawing.Point(419, 329);
             this.LblConfirmPassword.Name = "LblConfirmPassword";
-            this.LblConfirmPassword.Size = new System.Drawing.Size(142, 17);
+            this.LblConfirmPassword.Size = new System.Drawing.Size(185, 16);
             this.LblConfirmPassword.TabIndex = 20;
             this.LblConfirmPassword.Text = "CONFIRMAR CONTRASEÑA";
             // 
             // LblRecPassword
             // 
             this.LblRecPassword.AutoSize = true;
-            this.LblRecPassword.Font = new System.Drawing.Font("ISOCPEUR", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRecPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRecPassword.Location = new System.Drawing.Point(419, 255);
             this.LblRecPassword.Name = "LblRecPassword";
-            this.LblRecPassword.Size = new System.Drawing.Size(119, 17);
+            this.LblRecPassword.Size = new System.Drawing.Size(152, 16);
             this.LblRecPassword.TabIndex = 19;
             this.LblRecPassword.Text = "NUEVA CONTRASEÑA";
             // 
@@ -96,6 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Chefcito.Properties.Resources.UntitledBackgroundLogin;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.BtnSave);

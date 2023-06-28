@@ -108,5 +108,25 @@ namespace Chefcito
             this.Hide();
             Serv.Show();
         }
+
+        private void PanelUserName_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LbUserName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

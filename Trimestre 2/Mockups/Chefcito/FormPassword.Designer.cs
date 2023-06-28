@@ -41,7 +41,7 @@
             this.BtnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(105)))), ((int)(((byte)(77)))));
             this.BtnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSave.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BtnSave.Location = new System.Drawing.Point(536, 390);
+            this.BtnSave.Location = new System.Drawing.Point(670, 402);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(166, 35);
             this.BtnSave.TabIndex = 15;
@@ -52,43 +52,43 @@
             // LblConfirmPassword
             // 
             this.LblConfirmPassword.AutoSize = true;
-            this.LblConfirmPassword.Font = new System.Drawing.Font("ISOCPEUR", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblConfirmPassword.Location = new System.Drawing.Point(419, 329);
+            this.LblConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblConfirmPassword.Location = new System.Drawing.Point(553, 341);
             this.LblConfirmPassword.Name = "LblConfirmPassword";
-            this.LblConfirmPassword.Size = new System.Drawing.Size(142, 17);
+            this.LblConfirmPassword.Size = new System.Drawing.Size(185, 16);
             this.LblConfirmPassword.TabIndex = 14;
             this.LblConfirmPassword.Text = "CONFIRMAR CONTRASEÑA";
             // 
             // LblPassword
             // 
             this.LblPassword.AutoSize = true;
-            this.LblPassword.Font = new System.Drawing.Font("ISOCPEUR", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPassword.Location = new System.Drawing.Point(419, 255);
+            this.LblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPassword.Location = new System.Drawing.Point(553, 267);
             this.LblPassword.Name = "LblPassword";
-            this.LblPassword.Size = new System.Drawing.Size(78, 17);
+            this.LblPassword.Size = new System.Drawing.Size(102, 16);
             this.LblPassword.TabIndex = 13;
             this.LblPassword.Text = "CONTRASEÑA";
             // 
             // TbxConfirmPassword
             // 
             this.TbxConfirmPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TbxConfirmPassword.Location = new System.Drawing.Point(412, 349);
+            this.TbxConfirmPassword.Location = new System.Drawing.Point(546, 361);
             this.TbxConfirmPassword.Name = "TbxConfirmPassword";
-            this.TbxConfirmPassword.Size = new System.Drawing.Size(440, 13);
+            this.TbxConfirmPassword.Size = new System.Drawing.Size(415, 13);
             this.TbxConfirmPassword.TabIndex = 12;
             // 
             // TbxPassword
             // 
             this.TbxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TbxPassword.Location = new System.Drawing.Point(412, 275);
+            this.TbxPassword.Location = new System.Drawing.Point(546, 287);
             this.TbxPassword.Name = "TbxPassword";
-            this.TbxPassword.Size = new System.Drawing.Size(440, 13);
+            this.TbxPassword.Size = new System.Drawing.Size(415, 13);
             this.TbxPassword.TabIndex = 11;
             // 
             // BtnBack
             // 
             this.BtnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBack.Location = new System.Drawing.Point(422, 396);
+            this.BtnBack.Location = new System.Drawing.Point(556, 408);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(23, 23);
             this.BtnBack.TabIndex = 16;
@@ -99,6 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Chefcito.Properties.Resources.UntitledBackgroundpassword;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.BtnSave);

@@ -43,3 +43,15 @@ C:\Users\Aprendiz\Desktop\copia chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\o
 C:\Users\Aprendiz\Desktop\copia chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.Nohaynada.resources
 C:\Users\Aprendiz\Desktop\copia chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.Properties.Resources.resources
 C:\Users\Aprendiz\Desktop\copia chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.csproj.GenerateResource.Cache
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\bin\Debug\Chefcito.exe.config
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.exe
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.pdb
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.csprojResolveAssemblyReference.cache
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.FormLogin.resources
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.FormIndex.resources
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.FormPassword.resources
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.FormRecPassword.resources
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.FormRegister.resources
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.Nohaynada.resources
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.Properties.Resources.resources
+C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.csproj.GenerateResource.Cache
