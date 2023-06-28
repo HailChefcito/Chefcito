@@ -55,3 +55,12 @@ C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.FormR
 C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.Nohaynada.resources
 C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.Properties.Resources.resources
 C:\Users\fabig.LAPTOP-G9HESK90\Desktop\Mockups\Chefcito\obj\Debug\Chefcito.csproj.GenerateResource.Cache
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.csprojResolveAssemblyReference.cache
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormLogin.resources
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormIndex.resources
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormPassword.resources
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormRecPassword.resources
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.FormRegister.resources
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.Nohaynada.resources
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.Properties.Resources.resources
+C:\Users\fabia\OneDrive\Escritorio\SENA\Chefcito\Chefcito\Trimestre 2\Mockups\Chefcito\obj\Debug\Chefcito.csproj.GenerateResource.Cache

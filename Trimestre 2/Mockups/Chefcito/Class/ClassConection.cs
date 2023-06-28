@@ -5,16 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 
-namespace Areas01.Class
+namespace Chefcito.Class
 {
-    class CConection
+    class ClassConection
     {
         public static SqlConnection JoinConnection()
         {
-            SqlConnection conn = new SqlConnection("Data source = Sworer\\SQLEXPRESS; Initial catalog=DatosPersonas;integrated security = true");
+            SqlConnection conn = new SqlConnection("Data source = Sworer\\SQLEXPRESS; Initial catalog=ChefsitoV2;integrated security = true");
             conn.Open();
 
             return conn;
         }
+
     }
 }
