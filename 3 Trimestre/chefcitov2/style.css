@@ -1,0 +1,161 @@
+
+.fondotresrecuadros{
+    position: absolute;
+    width: 43%;
+    height: 90%;
+    margin-top: 1%;
+    margin-left: 25%;
+    border-radius: 35px;
+    border: 15px solid #000000;
+    background-color: #a2a0a0;  
+}
+.registro{
+    position: absolute;
+    width: 50%;
+    height: 88%;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 35px;
+    border: 10px solid #000000;
+    background-color: #ffffff;  
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.caffe{
+    position: absolute;
+    width: 34%;
+    height: 95%;
+    margin-top: 1%;
+    margin-left: 62%;
+    border-radius: 40px;
+    border: 10px solid #000000;
+    background-color: #ffffff;  
+}
+.cafe{
+width: 100%;
+height: 100%;
+border-radius: 30px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 3px 8px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 45%;
+    background-color: #6f6f70;
+    color: rgb(0, 0, 0);
+    padding: 7px 14px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  input[type=search]{
+    width: 30%;
+
+  } 
+  input[type=form-control_me-2]{
+    width: 30%;
+
+  } 
+  
+  button[type=button] {
+    width: 100%;
+    background-color: #868686;
+    color: rgb(0, 0, 0);
+    padding: 7px 14px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ffffff;
+  }
+  .container{
+    border-radius: 50px;
+    border: 10px solid #000000;
+    background-color: #4f4a4a;  
+  }
+.icono{
+  width: 50px;
+  height: 50px;
+
+}
+.hola{
+  border-radius: 50px;
+  border: 10px solid #000000;
+  background-color: #4f4a4a;  
+  bottom: 50px;
+  margin-top: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  margin-left: 0%;
+  width: 89%;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #2e3331;
+}
+.hola{
+  margin-top: 6%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.form{
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 235px;
+}
+.label1{
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.icon{
+  width: 10%;
+}
+.raya{
+  width: 100%;
+  height: 3px;
+  border: #000000 6px;
+  background-color: #000000;
+}
+th{
+  border-radius: 10px;
+}
+.ho{
+  color: aliceblue;
+}
