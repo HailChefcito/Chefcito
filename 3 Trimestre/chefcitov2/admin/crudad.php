@@ -17,7 +17,7 @@
             echo"<tr>";
             echo"<th><h3>Sugerencia#</h3></th>";
             echo"<th>|</th>";
-            echo"<th >Precio</th>";
+            echo"<th >Valoración</th>";
             echo"</tr>";
             echo"<tr>";
             echo"<th >Numero: ".$mostrar['numeroTelefono']."</th>";
