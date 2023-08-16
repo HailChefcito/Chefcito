@@ -6,7 +6,6 @@
         <meta charset="utf-8">
     </head>
     <body bgcolor="#deb887"> 
-        
         <?php include ("error/enunciado.php"); ?>
         <?php include ('error/back.php')?>
     </body>
