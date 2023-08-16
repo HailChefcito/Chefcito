@@ -1,7 +1,7 @@
 # **Chefcito**
 ![Logo de chefccito](https://github.com/HailChefcito/Chefcito/assets/124916979/984139d2-be65-44f1-8411-f72f4d9273eb)
 
-## Introducción:
+## Introducción::
   
   Generar un sistema de compras online en lo que respecta de productos alimenticios, ya sean empaquetados o platos a la carta, para que las personas tengan la facilidad de ordenar desde la comodidad de su hogar, dicho sistema de negocio está siendo <br>
   administrado por seis personas, encargadas del mantenimiento en general de la página, de la creación y generación de los alimentos, y el mantenimiento de los electrodomésticos utilizados entre las áreas de cocina.
