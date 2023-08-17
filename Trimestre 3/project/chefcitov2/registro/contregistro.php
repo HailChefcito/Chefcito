@@ -12,14 +12,14 @@
 
             <label >Apellido</label>
             <input type="text"name="lstname" placeholder="last name..">
-            <label >Tipo de usuario</label><br>
+            <label>Tipo de usuario</label><br>
             <input  type="radio" name="usuario" value="1" id="cliente">
-            <label  >Cliente</label>
+            <label  for="cliente">Cliente</label>
             <input  type="radio"  name="usuario" value="2" id="admin">
-             <label >Administrador</label><br>
+             <label for="admin">Administrador</label><br>
 
             <label>Genero</label>
-            <select name="genero" id="gene"required>
+            <select name="genero" id="gene" required>
             <option value="0">No Seleccionado</option>
             <option value="1">Mujer</option>
             <option value="2">Hombre</option>
@@ -29,12 +29,12 @@
             <label >Correo</label>
             <input type="text" name="email"value="@" required>
             <label >Contraseña</label><br>
-            <input type="password" name="password"placeholder="Password"required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
             <label >Confirmar contraseña</label><br>
-            <input type="password" name="confpass"placeholder="confirm password"required>
+            <input type="password" name="confpass" placeholder="confirm password"required>
             <p>
               <center>
-              <input type="submit"  name="btnregistrar" value="registrar" onClick="Javascript: return confirm('¡desea registar a este usuario?');">
+              <input type="submit"  name="btnregistrar" value="registrar" onClick="Javascript: return confirm('¿desea registar a este usuario?');">
             </p>
             <p>
               <lable>si ya tienes cuenta click <a href="index.php">aqui</button> :D</label>

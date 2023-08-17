@@ -11,14 +11,14 @@
     $contra=$_POST['password'];
     $conf_contra=$_POST['confpass'];
 
-    if($contraseña === $conf_contra)
+    if($contraseña == $conf_contra)
     {
         mysqli_query($conn, "INSERT INTO usuarios(numeroTelefono,nombreUsuario,apellidoUsuario,direccion,emailUsuario,idSexoUsuario,idTipoUsuario,contraseña) VALUES ('$telefono','$nombre','$apellido','$direccion','$correo','$genero','$tipouser','$contra')");
 
-        header('Location:inicio.php');
+        header('location: index.php');
     }
     else{
-        header('Location:error.php');
+        header('location: error.php');
     }
 
 ?>
