@@ -2,8 +2,8 @@
 
         require_once('../conexion.php');
 
-        $usuario = $_POST['telefonoUsur'];
-        $contraseña = $_POST['password'];
+        $usuario= $_POST['telefonoUsur'];
+        $contraseña= $_POST['password'];
                 
         $queryinicioSesion = mysqli_query($conn, "SELECT * from usuarios where numeroTelefono='$usuario' and contraseña='$contraseña'");
         $fila = mysqli_fetch_array($queryinicioSesion);
