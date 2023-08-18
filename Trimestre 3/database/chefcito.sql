@@ -188,7 +188,7 @@ CREATE TABLE `pedidoproducto` (
 
 CREATE TABLE `pedidos` (
   `idPedidos` int(5) NOT NULL,
-  `numeroTelefono` int(13) NOT NULL,
+  `numeroTelefono` varchar(20) NOT NULL,
   `fechaPedido` date NOT NULL,
   `horaPedido` time NOT NULL,
   `valorPedido` float(10,2) NOT NULL
@@ -223,7 +223,7 @@ INSERT INTO `platos` (`idPlatos`, `nombrePlatos`, `entradPlatos`, `salidaPlatos`
 (9, 'Muslos de pollo al horno con patatas', '', '', 0, 9000, 2, 'Calorías 290kcal 2 muslos de pollo 2 patatas medianas 1/2 cebolla 1/2 pimiento rojo 1 cucharadita de estragón 1/2 cucharadita de comino molido Pimienta negra al gusto Sal al gusto Aceite de oliva'),
 (10, 'Merluza al horno', '', '', 0, 10000, 2, 'Calorías 136kcal 1 kilo de lomos o filetes de merluza 1 cebolla blanca 1 pimiento opcional 2 dientes de ajo Aceite vegetal 1 vaso de vino blanco seco Sal al gusto Pimienta molida al gusto'),
 (11, 'LAS COSTILLAS DE CERDO', '', '', 0, 8500, 2, 'Calorías 290kcal AutorDaniel 1 costillar de cerdo (12 costillas aproximadamente) 1 taza de salsa barbacoa, casera preferiblemente Sal Pimienta negra Pimienta blanca Pimienta de cayena en polvo Comino molido Romero Ajo en polvo Cebolla en polvo Azúcar morena'),
-(12, 'Papas Rellenas', '', '', 0, 1500, 1, 'PAPA RELLENAooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo'),
+(12, 'Papas Rellenas', '', '', 0, 1500, 1, 'PAPA RELLENA'),
 (13, 'Bloody Mary', '', '', 0, 15000, 3, 'Vodka 70 ml Zumo de tomate 210 ml Zumo de limón 15 ml Salsa Tabasco dos gotas Salsa Worcestershire tres gotas Pimienta negra molida Apio'),
 (14, 'Negroni', '', '', 0, 12000, 3, '300 ml de Campari, 300 ml de vermú rojo, 300 ml de ginebra, naranja.'),
 (15, 'Tom Collins', '', '', 0, 10000, 3, '50 ml de ginebra, 100 ml de zumo de limón, 100 ml de soda, 1 cucharada de azúcar, hielo.'),
@@ -299,7 +299,7 @@ INSERT INTO `sexousuario` (`idSexoUsuario`, `nombreSexoUsuario`) VALUES
 
 CREATE TABLE `sugerencia` (
   `idSugerencia` int(11) NOT NULL,
-  `numeroTelefono` int(13) NOT NULL,
+  `numeroTelefono` varchar(20) NOT NULL,
   `descripcionSugerencia` varchar(400) DEFAULT NULL,
   `valoracionSugerencia` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -337,7 +337,7 @@ INSERT INTO `tipousuario` (`idTipoUsuario`, `nombreTipoCliente`) VALUES
 --
 
 CREATE TABLE `usuarios` (
-  `numeroTelefono` int(13) NOT NULL,
+  `numeroTelefono` varchar(20) NOT NULL,
   `nombreUsuario` varchar(20) NOT NULL,
   `apellidoUsuario` varchar(20) NOT NULL,
   `direccion` varchar(50) NOT NULL,
