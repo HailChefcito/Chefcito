@@ -14,12 +14,12 @@
     <div class="hola">
       <?php include("inicio/cartas.php");?>  
       <ul>
-        <li><a href="inicio.php">CHEFCITO</a></li>
-        <li><a href="#news">Dino Galletas</a></li>
-        <li><a href="admin.php">Contact</a></li>
+        <li><a href="inicio.php"><h2 class="offcanvas-title">CHEFCITO</h2></a></li>
+        <li><a href="#news">Dino Galletas de chefcito</a></li>
+        <li><a href="admin.php">Lo que el admin puede hacer</a></li>
+        <li><?php include("inicio/busqueda.php");?></li>
         <li><?php include("inicio/btnbandeja.php");?></li>
         <li><?php include("inicio/btncuenta.php");?></li>
-        <li><?php include("inicio/busqueda.php");?></li>
       </ul>
     </div> 
   </body>

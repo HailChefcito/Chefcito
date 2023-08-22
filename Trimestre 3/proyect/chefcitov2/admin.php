@@ -17,11 +17,11 @@
         <?php include("inicio/cartasadmin.php");?>
         <ul>
         
-        <li><h2 class="ho">Que desea hacer admin?</h2></li>
-        <li><a href="agregar.php">agregar</a></li><!-- aca iria una imagen de agregar-->
-        <li><a href="borrar.php">borrar</a></li><!-- aca iria una imagen de borrar-->
-        <li><a href="hola.php">ingred</li></a><!-- aca iria una imagen de actualizar-->
-        <li><?php include("inicio/busqueda.php");?></li>
+        <li><h2 class="ho" class="offcanvas-title">Que desea hacer admin?</h2></li>
+        <li><a href="agregar.php">agregar Bandeja</a></li><!-- aca iria una imagen de agregar-->
+        <!--<li><a href="borrar.php">borrar</a></li> aca iria una imagen de borrar-->
+        <li><a href="hola.php">Ingredientes</li></a><!-- aca iria una imagen de actualizar-->
+        <li><?php include("admin/adminbusqueda.php");?></li>
         <li><?php include("admin/crudadmin.php");?></li>
         <li><?php include("admin/crudad.php");?></li>
 </ul>
