@@ -1,0 +1,36 @@
+			esquema de cruds
+ [===========]buscar		crear
+ -------------------------------------------------------
+|	|				|		|
+|	|				|		|
+|Cagteg	|    tarjeta			|    Botones	|
+|	|				|		|
+|	|				|		|
+ -------------------------------------------------------
+|	|				|		|
+|	|				|		|
+|   1	|     carta			| delete/modif	|
+|	|				|		|
+|	|				|		|
+ -------------------------------------------------------
+|	|				|		|
+|	|				|		|
+|   3.1	|     carta			| delete/modif	|
+|	|				|		|
+|	|				|		|
+ -------------------------------------------------------
+|	|				|		|
+|	|				|		|
+|   4.1	|     carta			| delete/modif	|
+|	|				|		|
+|	|				|		|
+ -------------------------------------------------------
+
+listas de cruds:
+login=usuarios, tipoususarios,sexousuarios
+sugerencias=sugerencias
+platos=platos, platosingredientes,categorias
+ingredientes= ingredientes
+bandeja=salidas,pedidaproductos, pedidos
+comanda=ventas
+
