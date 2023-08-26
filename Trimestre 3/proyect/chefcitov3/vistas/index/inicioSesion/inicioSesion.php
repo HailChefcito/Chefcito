@@ -2,10 +2,10 @@
 
         require_once('../../../conex/conexion.php');
 
-        $usuario= $_POST['telefonoUsur'];
+        $usuario= $_POST['emailUsuario'];
         $contraseña= $_POST['password'];
                 
-        $queryinicioSesion = mysqli_query($conn, "SELECT * from usuarios where numeroTelefono='$usuario' and contraseña='$contraseña'");
+        $queryinicioSesion = mysqli_query($conn, "SELECT * from usuarios where emailUsuario='$usuario' and contraseña='$contraseña'");
         $fila = mysqli_fetch_array($queryinicioSesion);
 
         $cantidadFilas = mysqli_num_rows($queryinicioSesion);

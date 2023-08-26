@@ -17,8 +17,8 @@
             <h1>Login</h1>
           </center>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Telefono: </label>
-            <input type="number" class="form-control" name="telefonoUsur" id="exampleInputEmail1" required >
+            <label for="exampleInputEmail1" class="form-label">E-mail: </label>
+            <input type="email" class="form-control" name="emailUsuario" id="exampleInputEmail1" required >
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password: </label>
