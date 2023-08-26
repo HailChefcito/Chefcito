@@ -1,5 +1,5 @@
 <?php
-  include_once("conexion.php");
+  include_once("../../conex/conexion.php");
   //include_once("admin.php");
   //include_once("agregar.php");
 
@@ -55,7 +55,7 @@ if(isset($_POST['btnmodificar']))
 
     $querymodificar = mysqli_query($conn,"UPDATE sugerencia SET numeroTelefono='$numeroTelefono0',descripcionSugerencia='$descripcionSugerencia0', valoracionSugerencia='$valoracionSugerencia0' WHERE numeroTelefono='$ids'");
 
-    echo "<script>window.location= 'vistas/admin.php' </script>";
+    echo "<script>window.location= 'admin.php' </script>";
 
 }
 ?>

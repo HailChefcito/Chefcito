@@ -19,6 +19,6 @@
             }
         }else{       
             #aqui va en caso de que no se haya encontrado al usuario, osea que inserto o la contraseña o el usuario incorrecto
-            header('location:../error.php');
+            header('location:../../error.php');
         }
 ?>

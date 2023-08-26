@@ -3,7 +3,7 @@
         <tr>
             <th><font face="comic sans ms">
                 <h1 >Error en la página</h1><br>
-                <img src="error/x.png" alt="error"><br>
+                <img src="../resources/x.png" alt="error"><br>
                 <h2>vuelve a intentar o comprueba la veracidad de los datos</h2>
             </font>
             </th>

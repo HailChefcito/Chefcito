@@ -57,7 +57,7 @@
         echo"<label >Contraseña</label><br>";
         echo"<input type='password' name='password' value=".$contraseña."required readonly><br>";
 
-        echo "<td style='width=26%'><a href=\"admin/modiuser.php?numeroTelefono=$numeroTelefono\">Modificar</a>";
+        echo "<td style='width=26%'><a href=\"admin/moduser.php?numeroTelefono=$numeroTelefono\">Modificar</a>";
         echo "<th><a href =\"admin/eliminarusuario.php?numeroTelefono=$numeroTelefono\"onClick=\"return confirm('¿Estas seguro de eliminar a $numeroTelefono?')\">Eliminar</a></th>" ;
 
           

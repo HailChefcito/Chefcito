@@ -27,7 +27,7 @@
             echo"<th colspan='3'>".$mostrar['descripcionSugerencia']."</th>";
             echo"</tr>";
             echo"</table>";
-            echo "<td style='width=26%'><a href=\"modisuge.php?numeroTelefono=$mostrar[numeroTelefono]\">Modificar</a>";
+            echo "<td style='width=26%'><a href=\"admin/modsuge.php?numeroTelefono=$mostrar[numeroTelefono]\">Modificar</a>";
             echo "<th><a href =\"eliminar.php?numeroTelefono=$mostrar[numeroTelefono]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[numeroTelefono]?')\">Eliminar</a></th>" ;
             echo"</table>";
             }
