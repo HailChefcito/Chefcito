@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-08-2023 a las 22:45:59
+-- Tiempo de generación: 28-08-2023 a las 21:03:40
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.0.28
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `chefcito`
 --
+CREATE DATABASE IF NOT EXISTS `chefcito` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `chefcito`;
 
 -- --------------------------------------------------------
 
@@ -188,11 +190,18 @@ CREATE TABLE `pedidoproducto` (
 
 CREATE TABLE `pedidos` (
   `idPedidos` int(5) NOT NULL,
-  `numeroTelefono` varchar(20) NOT NULL,
+  `emailUsuario` varchar(45) NOT NULL,
   `fechaPedido` date NOT NULL,
   `horaPedido` time NOT NULL,
   `valorPedido` float(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Volcado de datos para la tabla `pedidos`
+--
+
+INSERT INTO `pedidos` (`idPedidos`, `emailUsuario`, `fechaPedido`, `horaPedido`, `valorPedido`) VALUES
+(12, 'asfgjbf@sañfaifb', '2023-08-01', '17:34:17', 243243.00);
 
 -- --------------------------------------------------------
 
@@ -299,7 +308,7 @@ INSERT INTO `sexousuario` (`idSexoUsuario`, `nombreSexoUsuario`) VALUES
 
 CREATE TABLE `sugerencia` (
   `idSugerencia` int(11) NOT NULL,
-  `numeroTelefono` varchar(20) NOT NULL,
+  `emailUsuario` varchar(45) NOT NULL,
   `descripcionSugerencia` varchar(400) DEFAULT NULL,
   `valoracionSugerencia` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
@@ -308,8 +317,8 @@ CREATE TABLE `sugerencia` (
 -- Volcado de datos para la tabla `sugerencia`
 --
 
-INSERT INTO `sugerencia` (`idSugerencia`, `numeroTelefono`, `descripcionSugerencia`, `valoracionSugerencia`) VALUES
-(1, 12450216, 'holaaaa', 1200);
+INSERT INTO `sugerencia` (`idSugerencia`, `emailUsuario`, `descripcionSugerencia`, `valoracionSugerencia`) VALUES
+(1, 'sebachodiazp29@gmail.com', 'holaaaa', 1200);
 
 -- --------------------------------------------------------
 
@@ -341,7 +350,7 @@ CREATE TABLE `usuarios` (
   `nombreUsuario` varchar(20) NOT NULL,
   `apellidoUsuario` varchar(20) NOT NULL,
   `direccion` varchar(50) NOT NULL,
-  `emailUsuario` varchar(60) NOT NULL,
+  `emailUsuario` varchar(45) NOT NULL,
   `idSexoUsuario` int(5) NOT NULL,
   `idTipoUsuario` int(5) NOT NULL,
   `contraseña` varchar(45) NOT NULL
@@ -352,10 +361,10 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`numeroTelefono`, `nombreUsuario`, `apellidoUsuario`, `direccion`, `emailUsuario`, `idSexoUsuario`, `idTipoUsuario`, `contraseña`) VALUES
-(12450216, 'Juan Sebastian', 'Rodriguez Diaz', 'calle 131# 154c-36', 'sebachodiazp29@gmail.com', 2, 1, 'juan'),
-(18746194, 'saigfaoiyf', 'saufusafgapf', 'sfsaufgsafuaf', 'asfgjbf@sañfaifb', 1, 1, '123'),
-(520573252, 'asfasfsads', 'teewgwdgs', 'dsgsgsdg', 'sdgsdgdsgsd@sdgsdgdsgdsgegwg', 1, 1, '1234'),
-(2147483647, 'fabian ', 'gomez', 'calle 42142141b 2414csf-21431', 'fabiaanashesexoanal@gmail.com', 1, 2, 'fabian');
+('18746194', 'saigfaoiyf', 'saufusafgapf', 'sfsaufgsafuaf', 'asfgjbf@sañfaifb', 1, 1, '123'),
+('2147483647', 'fabian ', 'gomez', 'calle 42142141b 2414csf-21431', 'fabiaanashesexoanal@gmail.com', 1, 2, 'fabian'),
+('520573252', 'asfasfsads', 'teewgwdgs', 'dsgsgsdg', 'sdgsdgdsgsd@sdgsdgdsgdsgegwg', 1, 1, '1234'),
+('12450216', 'Juan Sebastian', 'Rodriguez Diaz', 'calle 131# 154c-36', 'sebachodiazp29@gmail.com', 2, 1, 'juan');
 
 -- --------------------------------------------------------
 
@@ -401,7 +410,7 @@ ALTER TABLE `pedidoproducto`
 --
 ALTER TABLE `pedidos`
   ADD PRIMARY KEY (`idPedidos`),
-  ADD KEY `numeroTelefono_idx` (`numeroTelefono`);
+  ADD KEY `emailUsuario_idx` (`emailUsuario`);
 
 --
 -- Indices de la tabla `platos`
@@ -436,7 +445,7 @@ ALTER TABLE `sexousuario`
 --
 ALTER TABLE `sugerencia`
   ADD PRIMARY KEY (`idSugerencia`),
-  ADD KEY `numeroTelefono_idx` (`numeroTelefono`);
+  ADD KEY `emailUsuario_idx` (`emailUsuario`);
 
 --
 -- Indices de la tabla `tipousuario`
@@ -448,7 +457,7 @@ ALTER TABLE `tipousuario`
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`numeroTelefono`),
+  ADD PRIMARY KEY (`emailUsuario`),
   ADD KEY `idTipoUsuario_idx` (`idTipoUsuario`),
   ADD KEY `idSexoUsuario_idx` (`idSexoUsuario`);
 
@@ -474,7 +483,7 @@ ALTER TABLE `pedidoproducto`
 -- Filtros para la tabla `pedidos`
 --
 ALTER TABLE `pedidos`
-  ADD CONSTRAINT `numeroTelefono` FOREIGN KEY (`numeroTelefono`) REFERENCES `usuarios` (`numeroTelefono`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `emailUsuario` FOREIGN KEY (`emailUsuario`) REFERENCES `usuarios` (`emailUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `platos`
@@ -500,7 +509,7 @@ ALTER TABLE `salidas`
 -- Filtros para la tabla `sugerencia`
 --
 ALTER TABLE `sugerencia`
-  ADD CONSTRAINT `numeroTelefono1` FOREIGN KEY (`numeroTelefono`) REFERENCES `usuarios` (`numeroTelefono`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `emailUsuario1` FOREIGN KEY (`emailUsuario`) REFERENCES `usuarios` (`emailUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `usuarios`
