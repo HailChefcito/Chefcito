@@ -56,10 +56,10 @@
         echo"<input type='text' name='email' value=".$emailUsuario." required readonly>";
         echo"<label >Contraseña</label><br>";
         echo"<input type='password' name='password' value=".$contraseña."required readonly><br>";
-
-        echo "<td style='width=26%'><a href=\"admin/moduser.php?numeroTelefono=$numeroTelefono\">Modificar</a>";
-        echo "<th><a href =\"admin/eliminarusuario.php?numeroTelefono=$numeroTelefono\"onClick=\"return confirm('¿Estas seguro de eliminar a $numeroTelefono?')\">Eliminar</a></th>" ;
-
+        echo"<center>";
+        echo "<td><a class='btn btn-outline-success' href=\"admin/moduser.php?numeroTelefono=$numeroTelefono\">Modificar</a>";
+        echo "<th><a class='btn btn-outline-success'href =\"admin/eliminarusuario.php?numeroTelefono=$numeroTelefono\"onClick=\"return confirm('¿Estas seguro de eliminar a $numeroTelefono?')\">Eliminar</a></th>" ;
+        echo"</center>";
           
       echo"</div>";
       echo"</div>"; 

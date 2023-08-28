@@ -14,7 +14,7 @@
     <body  background="../resources/chefcito.jpg">
     <div class="hola">
         
-        <?php include("inicio/cartasadmin.php");?>
+        <?php include("admin/cartasadmin.php");?>
         <ul>
         
         <li><h2 class="ho" class="offcanvas-title">Que desea hacer admin?</h2></li>

@@ -21,14 +21,15 @@
             echo"</tr>";
             echo"<tr>";
             echo"<th >Numero: ".$mostrar['numeroTelefono']."</th>";
-            echo"<th >".$mostrar['valoracionSugerencia']."</th>";
+            echo"<th colspan='2'>".$mostrar['valoracionSugerencia']."</th>";
             echo"</tr>";
             echo"<tr>";
             echo"<th colspan='3'>".$mostrar['descripcionSugerencia']."</th>";
             echo"</tr>";
             echo"</table>";
-            echo "<td style='width=26%'><a href=\"admin/modsuge.php?numeroTelefono=$mostrar[numeroTelefono]\">Modificar</a>";
-            echo "<th><a href =\"eliminar.php?numeroTelefono=$mostrar[numeroTelefono]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[numeroTelefono]?')\">Eliminar</a></th>" ;
+            echo"<table class='table'>";
+            echo "<th><a class='btn btn-outline-success' href=\"admin/modsuge.php?numeroTelefono=$mostrar[numeroTelefono]\">Modificar</a></th>";
+            echo "<th><a class='btn btn-outline-success' href =\"eliminar.php?numeroTelefono=$mostrar[numeroTelefono]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[numeroTelefono]?')\">Eliminar</a></th>" ;
             echo"</table>";
             }
         ?>

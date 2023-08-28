@@ -26,7 +26,7 @@
             $querychefcito=mysqli_query($conn, "SELECT numeroTelefono, descripcionSugerencia, valoracionSugerencia FROM sugerencia");
             while($mostrar = mysqli_fetch_array($querychefcito))
             {
-            echo"<div class='raya'></div>";
+
             echo"<table class='table'>";
             echo"<tr>";
             echo"<th><h3>Sugerencia#</h3></th>";
@@ -35,14 +35,18 @@
             echo"</tr>";
             echo"<tr>";
             echo"<th >Numero: ".$mostrar['numeroTelefono']."</th>";
-            echo"<th >".$mostrar['valoracionSugerencia']."</th>";
+            echo"<th colspan='2'>".$mostrar['valoracionSugerencia']."</th>";
             echo"</tr>";
             echo"<tr>";
             echo"<th colspan='3'>".$mostrar['descripcionSugerencia']."</th>";
             echo"</tr>";
             echo"</table>";
-            echo "<td style='width=26%'><a href=\"modisuge.php?numeroTelefono=$mostrar[numeroTelefono]\">Modificar</a>";
-            echo "<th><a href =\"eliminar.php?numeroTelefono=$mostrar[numeroTelefono]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[numeroTelefono]?')\">Eliminar</a></th>" ;
+            echo"<table class='table'>";
+            echo"<tr>";
+            echo"<td><a class='btn btn-outline-success' href=\"modisuge.php?numeroTelefono=$mostrar[numeroTelefono]\">Editar</a>";
+            echo"<td><a class='btn btn-outline-success' href =\"eliminar.php?numeroTelefono=$mostrar[numeroTelefono]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[numeroTelefono]?')\">Eliminar</a></td>" ;
+            echo"<td><a class='btn btn-outline-success' href =\"registarsuge.php?numeroTelefono=$mostrar[numeroTelefono]\"onClick=\"return confirm('¿Vas a subir un sugerencia $mostrar[numeroTelefono]?')\">sugerencia</a></td>";
+            echo"</tr>";
             echo"</table>";
             }
         ?>

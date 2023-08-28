@@ -21,8 +21,8 @@
             echo"<th >".$mostrar['valorPlatos']."</th>";
             echo"</tr>";
             echo"</table>";
-            echo "<td style='width=26%'><a href=\"modificar.php?nombrePlatos=$mostrar[nombrePlatos]\">Modificar</a>";
-            echo "<th><a href =\"eliminar.php?nombrePlatos=$mostrar[nombrePlatos]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[nombrePlatos]?')\">Eliminar</a></th>" ;
+            echo"<table class='table'>";
+            echo "<th><center><a class='btn btn-outline-success' href =\"eliminarusu.php?nombrePlatos=$mostrar[nombrePlatos]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[nombrePlatos]?')\">Eliminar</a></center></th>" ;
             echo"</table>";
             echo"<div class='raya'></div>";
             
@@ -41,8 +41,8 @@
             echo"<th >".$mostrar['valorPlatos']."</th>";
             echo"</tr>";
             echo"</table>";
-            echo "<td style='width=26%'><a href=\"modificar.php?nombrePlatos=$mostrar[nombrePlatos]\">Modificar</a>";
-            echo "<th><a href =\"eliminar.php?nombrePlatos=$mostrar[nombrePlatos]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[nombrePlatos]?')\">Eliminar</a></th>" ;
+            echo"<table class='table'>";
+            echo "<th><center><a class='btn btn-outline-success' href =\"eliminarusu.php?nombrePlatos=$mostrar[nombrePlatos]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[nombrePlatos]?')\">Eliminar</a></center></th>" ;
             echo"</table>";
             echo"<div class='raya'></div>";
 
@@ -61,9 +61,10 @@
             echo"<th >".$mostrar['valorPlatos']."</th>";
             echo"</tr>";
             echo"</table>";
-            echo "<td style='width=26%'><a href=\"modificar.php?nombrePlatos=$mostrar[nombrePlatos]\">Modificar</a>";
-            echo "<th><a href =\"eliminarusu.php?nombrePlatos=$mostrar[nombrePlatos]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[nombrePlatos]?')\">Eliminar</a></th>" ;
+            echo"<table class='table'>";
+            echo "<th><center><a class='btn btn-outline-success' href =\"eliminarusu.php?nombrePlatos=$mostrar[nombrePlatos]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[nombrePlatos]?')\">Eliminar</a></center></th>" ;
             echo"</table>";
+            echo"<table class='table'>";
             echo"<div class='raya'></div>";
             echo"<table class='table'>";
             echo"<td>Total a pagar</td>";
