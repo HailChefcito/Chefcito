@@ -10,6 +10,6 @@
 
     mysqli_query($conn, "INSERT INTO platos(idPlatos,nombrePlatos, valorPlatos, idCategPlatos, descripcionPlatos ) VALUES('$idplato','$nombreplato','$valorplato','$tipoplato','$descripcion')");
 
-    header("Location:../vistas/admin.php");
+    header("Location:admin.php");
 
 ?>

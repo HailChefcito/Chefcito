@@ -32,7 +32,7 @@
             <div class='col-md-8'>
               <div class='card-body'>
                 <h5 class='card-title'><h3>".$mostrar['nombrePlatos']."</h3></h5>
-                <p class='card-text'><small class='text-body-secondary'><h6>".$mostrar['nombreCategorias']."</h6></small></p>
+                <p class='card-text'><small class='text-body-secondary'><h6>Categoria: ".$mostrar['nombreCategorias']."</h6></small></p>
                 <p class='card-text'><h5>".$mostrar['descripcionPlatos']."</h5></p>
                 <p class='card-text'><h6>Valor: $".$mostrar['valorPlatos']."</h6></small></p>
               </div>

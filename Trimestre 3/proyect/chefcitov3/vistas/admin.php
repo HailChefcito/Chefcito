@@ -26,8 +26,9 @@
         <li><?php include("admin/crudadmin.php");?></li>
         <li><?php include("admin/crudad.php");?></li>
         <li ><a class="btn btn-outline-success" href="../index.php" onClick="Javascript: return confirm('¿Seguro en cerrar secion?')">cerrar sesion</a></li>
-</ul>
-
+        
+      </ul>
+      
     </div>
     </body>
 </html>

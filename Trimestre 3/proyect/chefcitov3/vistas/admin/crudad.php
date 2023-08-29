@@ -9,7 +9,7 @@
   <div class="offcanvas-body">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <?php
-            $querychefcito=mysqli_query($conn, "SELECT numeroTelefono, descripcionSugerencia, valoracionSugerencia FROM sugerencia");
+            $querychefcito=mysqli_query($conn, "SELECT idSugerencia , descripcionSugerencia, valoracionSugerencia,emailUsuario   FROM sugerencia");
             while($mostrar = mysqli_fetch_array($querychefcito))
             {
             echo"<div class='raya'></div>";
@@ -20,7 +20,7 @@
             echo"<th >Valoración</th>";
             echo"</tr>";
             echo"<tr>";
-            echo"<th >Numero: ".$mostrar['numeroTelefono']."</th>";
+            echo"<th >Numero: ".$mostrar['emailUsuario']."</th>";
             echo"<th colspan='2'>".$mostrar['valoracionSugerencia']."</th>";
             echo"</tr>";
             echo"<tr>";
@@ -28,8 +28,8 @@
             echo"</tr>";
             echo"</table>";
             echo"<table class='table'>";
-            echo "<th><a class='btn btn-outline-success' href=\"admin/modsuge.php?numeroTelefono=$mostrar[numeroTelefono]\">Modificar</a></th>";
-            echo "<th><a class='btn btn-outline-success' href =\"eliminar.php?numeroTelefono=$mostrar[numeroTelefono]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[numeroTelefono]?')\">Eliminar</a></th>" ;
+            echo "<th><a class='btn btn-outline-success' href=\"admin/modsuge.php?emailUsuario=$mostrar[emailUsuario]\">Modificar</a></th>";
+            echo "<th><a class='btn btn-outline-success' href =\"eliminar.php?emailUsuario=$mostrar[emailUsuario]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[emailUsuario]?')\">Eliminar</a></th>" ;
             echo"</table>";
             }
         ?>

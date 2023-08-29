@@ -15,11 +15,11 @@
       <?php include("inicio/cartas.php");?>  
       <ul>
         <li><a href="inicio.php"><h3>CHEFCITO</h3></a></li>
-        <li><a href="#news"><h4>Dino Galletas</h4></a></li>
-        <li><a href="admin.php"><h4>Contact</h4></a></li>
         <li><?php include("inicio/btnbandeja.php");?></li>
         <li><?php include("inicio/btncuenta.php");?></li>
         <li><?php include("inicio/busqueda.php");?></li>
+        <li ><a class="btn btn-outline-success" href="index.php" onClick="Javascript: return confirm('¿Seguro en cerrar secion?')">cerrar sesion</a></li>
+         
       </ul>
     </div> 
   </body>

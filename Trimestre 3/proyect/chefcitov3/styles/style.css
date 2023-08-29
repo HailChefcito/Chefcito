@@ -107,6 +107,8 @@ ul {
   top: 0;
   margin-left: 0%;
   width: 89%;
+  border-bottom-left-radius: 20PX;
+  border-bottom-right-radius: 10PX;
 
 }
 
@@ -187,4 +189,52 @@ th{
 .table{
   background-color:rgba(0, 0, 0, 0.1);
   border: #000000 10px;
+}
+.ped{
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #363030;
+  background-color: #919191;  
+  bottom: 50px;
+  margin-top: 5%;
+  padding-left: 2%;
+}
+.ped{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.ped2{
+  width:100%;
+  border-radius: 25px;
+  border: 2px solid #363030;
+  background-color: #666464;  
+  bottom: 50px;
+  margin-top: 1%;
+  
+}
+.ped3{
+  text-align: left;
+  border-radius: 25px;
+  border: 2px solid #363030;
+  background-color: #919191;  
+  bottom: 50px;
+  padding-left: 2.5%;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.vamo
+{
+font-family: "comic sans ms";
+font-size: 13.8px;
+text-decoration: none;
+width: 45%;
+background-color: #6f6f70;
+color: rgb(0, 0, 0);
+padding: 7px 14px;
+margin: 4px 0;
+border: none;
+border-radius: 8px;
+cursor: pointer;
 }
