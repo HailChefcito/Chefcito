@@ -1,24 +1,35 @@
-<?php 
+<?php
+session_start();
+require_once('../../../conex/conexion.php');
 
-        require_once('../../../conex/conexion.php');
+// recibe la info de login.php
+$usuario = $_POST['emailUsuario'];
+$contraseña = $_POST['password'];
 
-        $usuario= $_POST['emailUsuario'];
-        $contraseña= $_POST['password'];
-                
-        $queryinicioSesion = mysqli_query($conn, "SELECT * from usuarios where emailUsuario='$usuario' and contraseña='$contraseña'");
-        $fila = mysqli_fetch_array($queryinicioSesion);
+// alamacena la el correo del usuario
+$_SESSION['usuarioAct'] = $usuario;
 
-        $cantidadFilas = mysqli_num_rows($queryinicioSesion);
+// busca al usuario en la bata base
+$queryinicioSesion = "SELECT * FROM usuarios WHERE emailUsuario = '$usuario' AND contraseña = '$contraseña'";
+$resultinicioSesion = mysqli_query($conn, $queryinicioSesion);
+$cantidadFilas = mysqli_num_rows($resultinicioSesion);
 
-        if($cantidadFilas > 0){
-            #aqui va la condicion en caso de que el usuario sea de tipo admin o cliente :v por el momento llevara a admin
-            if($fila['idTipoUsuario']== 2 ){ #En caso  de que sea admin :v
-            header('location:../../admin.php');}
-            else{ #En caso de que sea cliente :v
-                header('location:../../inicio.php');
-            }
-        }else{       
-            #aqui va en caso de que no se haya encontrado al usuario, osea que inserto o la contraseña o el usuario incorrecto
-            header('location:../../error.php');
-        }
+if ($cantidadFilas > 0) {
+    $fila = mysqli_fetch_assoc($resultinicioSesion);
+
+    // guarda el tipo de usuario 
+    $_SESSION['tipoUsurAct'] = $fila['idTipoUsuario'];
+
+    // redirigue dependiendo el tipo de usuario en esta session we
+    if ($fila['idTipoUsuario'] == 2) { // si es admin entoncs aja
+        header('Location: ../../admin.php');
+    } else { // si es un cliente entoncs aja
+        header('Location: ../../inicio.php');
+    }
+} else {
+    // Si no encuentra al usuario muestra error, esto depende de como haya el usuario digitado su info
+    header('Location: ../../error.php');
+}
+
+// DIOS ME SALVE DEL BALAZO QUE ME QUIERO METER POR HACER EL LOGGIN DENUEVO BRUH
 ?>

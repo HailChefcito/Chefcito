@@ -4,63 +4,51 @@
         <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <?php
-    #esto abajo es para verificar que haya una session xddd, si no hay entoncs lo manda al login, de aqui pa abajo es modificar usuario, hay que mostrarlo primero y darle la opcion al usuario si lo quiere modificar
 
-  $actual=$_SESSION['usuarioAct'];
-  $tipoUsuAct=$_SESSION['tipoUsurAct'];
+<?php
+// checa si el usuario esta logeado kkkkk
 
-
-
-  $querybuscar = mysqli_query($conn, "SELECT * FROM usuarios WHERE emailUsuario='$actual'");
-  
-  $querytipouser = mysqli_query($conn, "SELECT nombreTipoCliente FROM tipousuario WHERE idTipoUsuario='$tipoUsuAct'");
+if (!isset($_SESSION['usuarioAct'])) {
+    header("Location: login.php");
+    exit();
+}
 
 
-  while($fila = mysqli_fetch_array($querytipouser))
- {
-    $tipoUsur = $fila['nombreTipoCliente'];
 
- }
-  while($mostrar = mysqli_fetch_array($querybuscar))
- {
-    $numero = $mostrar['numeroTelefono'];
-    $nombreUsuario = $mostrar['nombreUsuario'];
-    $apellidoUsuario = $mostrar['apellidoUsuario'];
-    $direccion = $mostrar['direccion'];
-    $email = $mostrar['emailUsuario'];
-    $sexo = $mostrar['idSexoUsuario'];
-    $tipoUser = $mostrar['idTipoUsuario'];
-    $contraseña = $mostrar['contraseña'];
+// recibe la info del pto usuario man
+$actual = $_SESSION['usuarioAct'];
+$query = "SELECT * FROM usuarios WHERE emailUsuario = '$actual'";
+$result = mysqli_query($conn, $query);
+$userData = mysqli_fetch_assoc($result);
 
- }
- $querysexo = mysqli_query($conn, "SELECT * FROM sexousuario WHERE idSexoUsuario='$sexo'");
- while($filaSexo = mysqli_fetch_array($querysexo))
- {
-    $generoEspecifico = $filaSexo['nombreSexoUsuario'];
- }
+// recibe el sexo(riko) del usuario
+$sexo = $userData['idSexoUsuario'];
+$querySexo = "SELECT nombreSexoUsuario FROM sexousuario WHERE idSexoUsuario = '$sexo'";
+$resultSexo = mysqli_query($conn, $querySexo);
+$generoEspecifico = mysqli_fetch_assoc($resultSexo)['nombreSexoUsuario'];
+
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHEFCITO</title>
-    <link rel="stylesheet" href=styles/style.css>
-  </head>
-    <body  background="resources/chefcito.jpg">
-        <div class=hola>   <!-- toca poner la clase para el css-->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body background="resources/chefcito.jpg">
+<div class="hola">
+    <h2>Bienvenido <?php echo $userData['nombreUsuario']; ?> !!!!!!</h2>
+    <br><br><br><br><br>
+    <label align="center">Teléfono: <?php echo $userData['numeroTelefono']; ?></label>
+    <label align="center">Correo: <?php echo $userData['emailUsuario']; ?></label>
+    <label align="center">Dirección: <?php echo $userData['direccion']; ?></label>
+    <label align="center">Sexo: <?php echo $generoEspecifico; ?></label>
 
-                <h2>Bienvenido <?php echo $nombreUsuario?> !!!!!! </h2>
-                <br></br><br></br><br></br><br></br>
-                <label align="center">telefono---------------<?php echo $numero?></label>
-                <label align="center">correo---------------<?php echo $email?> </label>
-                <label align="center">direccion---------------<?php echo $direccion?> </label>
-                <label align="center">sexo---------------<?php echo $generoEspecifico?> </label>
-
-                <!--aqui va para que seleccione el sexo dxd, hay que hacer una consulta xdxdxdxdxdxdxdxd, o no, nose xdxdxdxdxd -->
-
-                <a type="button" href="../vistas/modificarUsuario.php">Modificar</button>
-        </div>
-    </body>
+    <!-- en caso de que el weon quiera modificar su cuenta we -->
+    <a type="button" href="../vistas/modificarUsuario.php">Modificar</a>
+</div>
+</body>
 </html>

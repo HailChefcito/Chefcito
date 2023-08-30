@@ -11,6 +11,9 @@
   </head>
   
   <body  background="resources/chefcito.jpg">
-    <?php include("vistas/index/login.php");?>
+    <?php 
+
+    include("vistas/index/login.php");
+    ?>
   </body>
 </html>
