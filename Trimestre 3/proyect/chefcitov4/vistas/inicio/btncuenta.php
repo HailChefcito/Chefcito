@@ -6,10 +6,6 @@
     </div>
     <?php
     #esto abajo es para verificar que haya una session xddd, si no hay entoncs lo manda al login, de aqui pa abajo es modificar usuario, hay que mostrarlo primero y darle la opcion al usuario si lo quiere modificar
-  if(!isset($_SESSION['usuarioAct'])){
-    header('location: index.php');
-  }
-
 
   $actual=$_SESSION['usuarioAct'];
   $tipoUsuAct=$_SESSION['tipoUsurAct'];
