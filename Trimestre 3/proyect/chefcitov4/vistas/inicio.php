@@ -15,10 +15,10 @@ session_start();
     <div class="hola">
       <?php include("inicio/cartas.php");?>  
       <ul>
-        <li><a href="inicio.php"><h3>CHEFCITO</h3></a></li>
+        <li><a href="inicio.php"><h2 >CHEFCITO.com</h2></a></li>
         <li><?php include("inicio/btnbandeja.php");?></li>
-        <li><?php include("inicio/btncuenta.php");?></li>
         <li><?php include("inicio/busqueda.php");?></li>
+        <li><?php include("inicio/btncuenta.php");?></li>
         <li ><a class="btn btn-outline-success" href="cerrarSesion/logOut.php" onClick="Javascript: return confirm('¿Seguro en cerrar secion?')">cerrar sesion</a></li>
          
       </ul>

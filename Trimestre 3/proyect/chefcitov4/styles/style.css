@@ -238,3 +238,18 @@ border: none;
 border-radius: 8px;
 cursor: pointer;
 }
+.ic{
+  width: 30px;
+  height: 27px;
+}
+.usuario{
+  background-color: #c2c2c2;
+  height: 100%;
+  border-radius: 30px;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.fo{
+  background-color: #e2e2e2;
+  height: 100%;
+}
