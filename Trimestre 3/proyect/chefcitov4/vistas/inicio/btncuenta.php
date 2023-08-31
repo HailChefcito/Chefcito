@@ -54,6 +54,7 @@
                 <p>
                 <!-- en caso de que el weon quiera modificar su cuenta we -->
                 <a type="button" class='btn btn-outline-success'  href="../vistas/modificarUsuario.php">Modificar</a>
+                
                 <?php
             $querychefcito=mysqli_query($conn, "SELECT emailUsuario, descripcionSugerencia, valoracionSugerencia FROM sugerencia");
             while($mostrar = mysqli_fetch_array($querychefcito))
@@ -75,13 +76,14 @@
             echo"</table>";
             
             echo"<tr>";
-            echo"<td><a class='btn btn-outline-success' href=\"modisuge.php?emailUsuario=$mostrar[emailUsuario]\">Editar</a>";
-            echo"<td><a class='btn btn-outline-success' href =\"eliminar.php?emailUsuario=$mostrar[emailUsuario]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[emailUsuario]?')\">Eliminar</a></td>" ;
-            echo"<td><a class='btn btn-outline-success' href =\"registarsuge.php?emailUsuario=$mostrar[emailUsuario]\"onClick=\"return confirm('¿Vas a subir un sugerencia $mostrar[emailUsuario]?')\">sugerencia</a></td>";
+            
+            echo"<td><a class='btn btn-outline-success' href =\"inicio/eiliminarsuge.php?emailUsuario=$mostrar[emailUsuario]\"onClick=\"return confirm('¿Estas seguro de eliminar a $mostrar[emailUsuario]?')\">Eliminar</a></td>" ;
+            echo"<td><a class='btn btn-outline-success' href =\"inicio/registarsuge.php?emailUsuario=$mostrar[emailUsuario]\"onClick=\"return confirm('¿Vas a subir un sugerencia $mostrar[emailUsuario]?')\">sugerencia</a></td>";
             echo"</tr>";
             echo"</table>";
             }
         ?>
+      
     </div>
     </div>
 </body>
@@ -90,3 +92,4 @@
         </figure>
     </div>
     </div> 
+<!--echo"<td><a class='btn btn-outline-success' href=\"modisuge.php?emailUsuario=$mostrar[emailUsuario]\">Editar</a>";-->

@@ -71,5 +71,6 @@
             echo"<td>=</td>";
             echo"<td>$  </td>";
             echo"</table>";
+            
             }
         ?>

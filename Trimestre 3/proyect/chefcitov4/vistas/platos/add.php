@@ -1,4 +1,4 @@
-<?php include_once("../conex/conexion.php");
+<?php include_once("../../conex/conexion.php");
 
     $nombreplato = $_POST['nameplato'];
     $idplato = $_POST['idplato'];

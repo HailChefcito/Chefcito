@@ -1,4 +1,4 @@
-<?php include_once("../conex/conexion.php");?>
+<?php include_once("../../conex/conexion.php");?>
 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sugerencias</button>
 
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">

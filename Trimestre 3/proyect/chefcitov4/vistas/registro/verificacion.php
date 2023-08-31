@@ -1,5 +1,5 @@
 <?php 
-    include_once("../conex/conexion.php");
+    include_once("../../conex/conexion.php");
 
     $telefono=$_POST['phone'];
     $nombre=$_POST['name'];
