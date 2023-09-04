@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-08-2023 a las 21:03:40
+-- Tiempo de generación: 04-09-2023 a las 23:25:33
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.0.28
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `chefcito`
 --
-CREATE DATABASE IF NOT EXISTS `chefcito` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `chefcito`;
 
 -- --------------------------------------------------------
 
@@ -71,7 +69,7 @@ INSERT INTO `ingredientes` (`idIngredientes`, `nombreIngrediente`) VALUES
 (8, 'Cebolla'),
 (9, 'Pimiento'),
 (10, 'Tomate'),
-(11, 'Lechuga'),
+(11, 'Lechugaa'),
 (12, 'Pepino'),
 (13, 'Zanahoria'),
 (14, 'Papa'),
@@ -318,7 +316,11 @@ CREATE TABLE `sugerencia` (
 --
 
 INSERT INTO `sugerencia` (`idSugerencia`, `emailUsuario`, `descripcionSugerencia`, `valoracionSugerencia`) VALUES
-(1, 'sebachodiazp29@gmail.com', 'holaaaa', 1200);
+(1, 'sebachodiazp29@gmail.com', 'holaaaa', 1200),
+(2, 'juanitagamerOwO911@gmail.com', 'Tengo sida', 5234),
+(3, 'juanitagamerOwO911@gmail.com', 'no se', 1),
+(4, 'juanitagamerOwO911@gmail.com', 'dasdad', 2),
+(5, 'juanitagamerOwO911@gmail.com', 'czxvzxcvczxv', 2);
 
 -- --------------------------------------------------------
 
@@ -361,10 +363,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`numeroTelefono`, `nombreUsuario`, `apellidoUsuario`, `direccion`, `emailUsuario`, `idSexoUsuario`, `idTipoUsuario`, `contraseña`) VALUES
-('18746194', 'saigfaoiyf', 'saufusafgapf', 'sfsaufgsafuaf', 'asfgjbf@sañfaifb', 1, 1, '123'),
-('2147483647', 'fabian ', 'gomez', 'calle 42142141b 2414csf-21431', 'fabiaanashesexoanal@gmail.com', 1, 2, 'fabian'),
-('520573252', 'asfasfsads', 'teewgwdgs', 'dsgsgsdg', 'sdgsdgdsgsd@sdgsdgdsgdsgegwg', 1, 1, '1234'),
-('12450216', 'Juan Sebastian', 'Rodriguez Diaz', 'calle 131# 154c-36', 'sebachodiazp29@gmail.com', 2, 1, 'juan');
+('2147483647', 'fabian ', 'gomez', 'calle 42142141b 2414csf-21431', 'fabialol@gmail.com', 1, 2, 'fabian'),
+('3013243008', 'Miguel', 'Ballesta', 'calle 121c ef', 'juanitagamerOwO911@gmail.com', 1, 1, 'miguel');
 
 -- --------------------------------------------------------
 
@@ -469,6 +469,16 @@ ALTER TABLE `ventas`
   ADD KEY `idPedidos_idx` (`idPedidos`);
 
 --
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `sugerencia`
+--
+ALTER TABLE `sugerencia`
+  MODIFY `idSugerencia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- Restricciones para tablas volcadas
 --
 
@@ -478,12 +488,6 @@ ALTER TABLE `ventas`
 ALTER TABLE `pedidoproducto`
   ADD CONSTRAINT `idPedidos` FOREIGN KEY (`idPedidos`) REFERENCES `pedidos` (`idPedidos`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `idPlatos` FOREIGN KEY (`idPlatos`) REFERENCES `platos` (`idPlatos`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `pedidos`
---
-ALTER TABLE `pedidos`
-  ADD CONSTRAINT `emailUsuario` FOREIGN KEY (`emailUsuario`) REFERENCES `usuarios` (`emailUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `platos`
@@ -504,12 +508,6 @@ ALTER TABLE `platosingredientes`
 ALTER TABLE `salidas`
   ADD CONSTRAINT `idPlatos2` FOREIGN KEY (`idPlatos`) REFERENCES `platos` (`idPlatos`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `idVenta2` FOREIGN KEY (`idVenta`) REFERENCES `ventas` (`idVenta`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `sugerencia`
---
-ALTER TABLE `sugerencia`
-  ADD CONSTRAINT `emailUsuario1` FOREIGN KEY (`emailUsuario`) REFERENCES `usuarios` (`emailUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `usuarios`
