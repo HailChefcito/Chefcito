@@ -26,6 +26,6 @@
         <input type="text" name="ingredientes">
 
         <input type="submit" valuer="Enviar" name="btnregistrar" onClick="Javascript: return confirm ('¿Deseas agregar este plato a la carta?');">
-        <a href="../admin.php">regresar al ingreso</a>
+        <a href="admin.php">regresar al ingreso</a>
     </form>
 </div>

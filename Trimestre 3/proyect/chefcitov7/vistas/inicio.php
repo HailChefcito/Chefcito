@@ -21,6 +21,7 @@ session_start();
         <li><?php include("inicio/btnbandeja.php");?></li>
         <li><?php include("inicio/busqueda.php");?></li>
         <li><?php include("inicio/btncuenta.php");?></li>
+        
       </ul>
     </div> 
   </body>

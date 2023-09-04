@@ -1,4 +1,6 @@
 <?php
+  session_start();
+  $actual = $_SESSION['usuarioAct'];
   include_once("../../conex/conexion.php");
 ?>
 <!DOCTYPE html>
@@ -16,21 +18,22 @@
     <body  background="../../resources/chefcito.jpg">
     <div class="fondotresrecuadros">
       <form method="post" action="addsugerencia.php">
-                <label>id </label>
-                <input type="text" name="idSugerencia" maxlength="45" required>
+      <center>
+                <label class="h2">El usuario: <?php echo $actual?> desea agruegar una sugerenciaa</label>
+                <P></P>
 
-                <label>emailUsuario</label>
-                <input type="text" name="emailUsuario" maxlength="30" required>
+                <label class="h3">Descrpcion</label>
+                <textarea class="form-control" name="descripcionSugerencia"  rows="3" required></textarea>
 
-                <label>Descrpcion</label>
-                <input type="text" name="descripcionSugerencia" maxlength="350" required>
-                <label>valor</label>
+                <label class="h3">valor</label><p></p>
                 <input type="number" name="valoracionSugerencia" maxlength="1"required></br>
 
 
 
                 <input type="submit" value="Enviar" name="addsuge" onClick="Javascript: return confirm ('¿Deseas registrar su sugerenia?');">
-                <a href="../inicio.php">regresar al ingreso</a>
+                <a class="btn btn-secondary"href="../inicio.php">Regresar</a>
+                
+                </center>
     </form>
     </div>
 </body>

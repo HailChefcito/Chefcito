@@ -36,8 +36,8 @@
 ?> 
         <div class=hola>   <!-- toca poner la clase para el css-->
             <form method="post" >
-                <label>Telefono: </label>
-                <input type="number" name="telefono" value="<?php echo $numero;?>" required>
+                <label>Telefono: </label><br>
+                <input type="number" name="telefono" value="<?php echo $numero;?>" required><br>
 
                 <label>Nombres: </label>
                 <input type="text" name="nomUser" value="<?php echo $nombreUsuario;?>" required>
@@ -64,11 +64,12 @@
                 <label>Contraseña: </label>
                 <input type="password" name="contraseña" placeholder="ingrese una nueva contraseña" required></br>
                 <label>Confirmar nueva contraseña:</label>
-                <input type="password" name="conf_contra" placeholder="confirme la contraseña" required>
+                <input type="password" name="conf_contra" placeholder="confirme la contraseña" required><br>
 
 
 
                 <input type="submit" style="align: center;" value="Update" name="btnmodificar" onClick="Javascript: return confirm ('¿Deseas Modificar tu cuenta?');">
+                <a href="./inicio.php" style="align: center;" class="vamo">Volver</a>
             </form>
         </div>
     </body>

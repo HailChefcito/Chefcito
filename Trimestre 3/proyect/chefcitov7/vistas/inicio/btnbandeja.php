@@ -1,19 +1,16 @@
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Bandeja de pedido</button>
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-<div class="fo">    
-<div class="offcanvas-header">
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></br>
 
-    </div>
-    <center>
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Lista del pedido</h5>
-</center>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+Bandeja de pedido
+</button>
 
-    <div class="offcanvas-body">
-        
-        <blockquote class="blockquote">
-            <?php include("inicio/bandeja.php");?>  
-        </blockquote>
-        </div>
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel">Lista De Pedidos</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+    <?php include("inicio/bandeja.php");?>  
     </div>
+  </div>
 </div>
