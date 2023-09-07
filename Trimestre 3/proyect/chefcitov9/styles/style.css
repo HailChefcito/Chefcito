@@ -1,0 +1,255 @@
+
+.fondotresrecuadros{
+    position: absolute;
+    width: 43%;
+    height: 90%;
+    margin-top: 1%;
+    margin-left: 25%;
+    border-radius: 35px;
+    border: 15px solid #000000;
+    background-color: #a2a0a0;  
+}
+.registro{
+    position: absolute;
+    width: 50%;
+    height: 88%;
+    margin-top: 1%;
+    margin-left: 1%;
+    border-radius: 35px;
+    border: 10px solid #000000;
+    background-color: #ffffff;  
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.caffe{
+    position: absolute;
+    width: 34%;
+    height: 95%;
+    margin-top: 1%;
+    margin-left: 62%;
+    border-radius: 40px;
+    border: 10px solid #000000;
+    background-color: #ffffff;  
+}
+.cafe{
+width: 100%;
+height: 100%;
+border-radius: 30px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 3px 8px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 45%;
+    background-color: #6f6f70;
+    color: rgb(0, 0, 0);
+    padding: 7px 14px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  input[type=search]{
+    width: 30%;
+
+  } 
+  input[type=form-control_me-2]{
+    width: 30%;
+
+  } 
+  
+  button[type=button] {
+    width: 100%;
+    background-color: #868686;
+    color: rgb(0, 0, 0);
+    padding: 7px 14px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ffffff;
+  }
+  .container{
+    border-radius: 50px;
+    border: 10px solid #000000;
+    background-color: #4f4a4a;  
+  }
+.icono{
+  width: 50px;
+  height: 50px;
+
+}
+.hola{
+  border-radius: 50px;
+  border: 10px solid #000000;
+  background-color: #4f4a4a;  
+  bottom: 50px;
+  margin-top: 5%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  margin-left: 0%;
+  width: 89%;
+  border-bottom-left-radius: 20PX;
+  border-bottom-right-radius: 10PX;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #2e3331;
+}
+.hola{
+  margin-top: 6%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.form{
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 235px;
+}
+.label1{
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.icon{
+  width: 10%;
+}
+.raya{
+  width: 100%;
+  height: 3px;
+  border: #000000 6px;
+  background-color: #000000;
+}
+th{
+  border-radius: 10px;
+}
+.ho{
+  color: aliceblue;
+}
+.caja_popup 
+{
+	overflow: auto;
+	display: none;
+    position: absolute;
+	padding:0;
+	background-color:rgba(0, 0, 0, 0.5);
+	width:100%;
+	height:125%;
+	position:fixed;
+}
+.contenedor_popup 
+{
+	border-radius: 5px;
+	top: 35%;
+	left: 25%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	width:500px;
+	border-radius: 5px;
+	transition: all 0.2s;
+}
+.tres{
+  background-color:rgba(0, 0, 0, 0.5);
+}
+.table{
+  background-color:rgba(0, 0, 0, 0.1);
+  border: #000000 10px;
+}
+.ped{
+  text-align: center;
+  border-radius: 25px;
+  border: 2px solid #363030;
+  background-color: #919191;  
+  bottom: 50px;
+  margin-top: 5%;
+  padding-left: 2%;
+}
+.ped{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.ped2{
+  width:100%;
+  border-radius: 25px;
+  border: 2px solid #363030;
+  background-color: #666464;  
+  bottom: 50px;
+  margin-top: 1%;
+  
+}
+.ped3{
+  text-align: left;
+  border-radius: 25px;
+  border: 2px solid #363030;
+  background-color: #919191;  
+  bottom: 50px;
+  padding-left: 2.5%;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.vamo
+{
+font-family: "comic sans ms";
+font-size: 13.8px;
+text-decoration: none;
+width: 45%;
+background-color: #6f6f70;
+color: rgb(0, 0, 0);
+padding: 7px 14px;
+margin: 4px 0;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+}
+.ic{
+  width: 30px;
+  height: 27px;
+}
+.usuario{
+  background-color: #c2c2c2;
+  height: 120%;
+  border-radius: 30px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+.fo{
+  background-color: #e2e2e2;
+  height: 100%;
+}
