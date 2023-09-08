@@ -22,16 +22,16 @@
         <?php 
 
         include("admin/cartasadmin.php");?>
-        <ul>
+        <ul class="ull">
         
-        <li><h2 class="ho" class="offcanvas-title">Admin</h2></li>
-        <li><?php include("admin/adminbusqueda.php");?></li>
-        <li><a class="btn btn-dark"href="platos.php">agregar a Bandeja</a></li><!-- aca iria una imagen de agregar-->
+        <li class="lli"><h2 class="ho" class="offcanvas-title">Admin</h2></li>
+        <li class="lli"><?php include("admin/adminbusqueda.php");?></li>
+        <li class="lli"><a class="btn btn-dark"href="platos.php">agregar a Bandeja</a></li><!-- aca iria una imagen de agregar-->
         <!--<li><a href="borrar.php">borrar</a></li> aca iria una imagen de borrar-->
-        <li><a class="btn btn-dark"href="hola.php">Ingredientes</li></a><!-- aca iria una imagen de actualizar-->
-        <li><a class="btn btn-dark"href="pedidos/pedido.php">Pedidos</a></li>
-        <li><?php include("admin/crudadmin.php");?></li>
-        <li><?php include("admin/crudad.php");?></li>
+        <li class="lli"><a class="btn btn-dark"href="hola.php">Ingredientes</li></a><!-- aca iria una imagen de actualizar-->
+        <li class="lli"><a class="btn btn-dark"href="pedidos/pedido.php">Pedidos</a></li>
+        <li class="lli"><?php include("admin/crudadmin.php");?></li>
+        <li class="lli"><?php include("admin/crudad.php");?></li>
       
         
       </ul>

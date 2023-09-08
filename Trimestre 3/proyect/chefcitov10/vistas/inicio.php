@@ -32,15 +32,25 @@ session_start();
     <div class="pagina">
     <nav >
   <ul class="pagination">
-
-    <li class="page-item"><a class="btn btn-dark" href="#">General</a></li>
-    <li class="page-item"><a class='btn btn-success' href="#">Bebidas</a></li>
-    <li class="page-item"> <a class='btn btn-success' href="#">Entradas</a></li>
-    <li class="page-item"><a class='btn btn-success' href="#">Postre</a></li>
-    <li class="page-item"><a class='btn btn-success' href="#">Platos Fuertes</a></li>
-    <li class="page-item"><a class='btn btn-success' href="#">Acompañamiento</a></li>
-
+    <form method="POST">
+      <input  type="radio" name="categ" value="0"  class='btn btn-success' ><label>Default</label>
+      <input  type="radio" name="categ" value="1"  class='btn btn-success'><label>Entradas</label>
+      <input  type="radio" name="categ" value="2"  class='btn btn-success' ><label>Plato Fuerte</label>
+      <input  type="radio" name="categ" value="3"  class='btn btn-success' ><label>Bebida</label>
+      <input  type="radio" name="categ" value="4"  class='btn btn-success' ><label>Postres</label>
+      <input  type="radio" name="categ" value="5"  class='btn btn-success' ><label>Acomp</label>
+      <input type="submit" class='btn btn-success'>
+    </form>
   </ul>
+
+   <?php
+
+      if(isset ($_POST['categ'])){
+        $_SESSION['busquedaPag']=$_POST['categ'];
+      }
+   ?>
+
+  
 </nav>
 </div>
   </body>

@@ -1,25 +1,28 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 <?php   
-if(isset($_POST['btnbuscar']))
-{
-    $buscar=$_POST['txtbuscar'];
-    //consulta para imprimir en el inicio
-    $querychefcito=mysqli_query($conn, "SELECT categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias JOIN platos ON categorias.idCategPlatos = platos.idCategPlatos WHERE platos.nombrePlatos LIKE '".$buscar."%'");
 
-    //consulta con la clase para la bandeja de platos
-    $array_platos = $usar_db->platosquery("SELECT categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias JOIN platos ON categorias.idCategPlatos = platos.idCategPlatos WHERE platos.nombrePlatos LIKE '".$buscar."%'");
+
+
+$categ=$_SESSION['busquedaPag'];
+$buscar=$_SESSION['buscar'];
+if (!isset($_SESSION['busquedaPag'])){
+  if($categ==0){
+    $array_platos = $usar_db->platosquery("SELECT  categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias, platos WHERE categorias.idCategPlatos = platos.idCategPlatos ORDER by platos.idCategPlatos ASC;");
+    echo $categ;
   }else{
-    //consulta para imprimir en el inicio
-    $querychefcito=mysqli_query($conn, "SELECT  categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias, platos WHERE categorias.idCategPlatos = platos.idCategPlatos ORDER by platos.nombrePlatos ASC;");
-
-    //consulta con la clase para la bandeja de platos
-    $array_platos = $usar_db->platosquery("SELECT categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias, platos WHERE categorias.idCategPlatos = platos.idCategPlatos ORDER BY `platos`.`idCategPlatos` ASC;");
+    if(!isset($_POST['btnbuscar']))
+    {
+      $querychefcito=mysqli_query($conn, "SELECT categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias JOIN platos ON categorias.idCategPlatos = platos.idCategPlatos WHERE platos.nombrePlatos LIKE '%".$buscar."%';");
+      $array_platos = $usar_db->platosquery("SELECT categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias JOIN platos ON categorias.idCategPlatos = platos.idCategPlatos WHERE platos.nombrePlatos LIKE '".$buscar."%'");
+      echo "caso1";
+    }else{
+      $querychefcito=mysqli_query($conn, "SELECT  categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias, platos WHERE categorias.idCategPlatos = platos.idCategPlatos ORDER by platos.idCategPlatos LIKE'%".$categ."%'");
+      $array_platos = $usar_db->platosquery("SELECT categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias, platos WHERE categorias.idCategPlatos = platos.idCategPlatos ORDER BY platos.nombrePlatos ASC;");
+      echo "caso2";
+    }
   }
-
-
-
- 
+}
 
 if (!empty($array_platos)) 
 { $ntabla=0;
