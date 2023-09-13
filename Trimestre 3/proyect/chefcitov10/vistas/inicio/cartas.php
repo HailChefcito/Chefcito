@@ -19,7 +19,7 @@ $array_platos = $usar_db->platosquery("SELECT categorias.nombreCategorias, plato
     <!-- Barra de navegación con las categorías -->
     <nav>
     <ul class="pagination">
-    <li class="page-item"><a class='btn btn-success' href="?categoria=">General</a></li>
+        <li class="lli"><?php include("inicio/busqueda.php");?></li>
         <li class="page-item"><a class='btn btn-success' href="?categoria=Bebida">Bebidas</a></li>
         <li class="page-item"><a class='btn btn-success' href="?categoria=Entradas">Entradas</a></li>
         <li class="page-item"><a class='btn btn-success' href="?categoria=Postre">Postre</a></li>

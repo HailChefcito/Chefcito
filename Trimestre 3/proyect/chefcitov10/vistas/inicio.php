@@ -23,7 +23,6 @@ session_start();
       <ul class="ull">
         <li class="lli"><img src='../resources/chefcito.jpg' class='img-fluid rounded-start' alt='...' style="width:25%;"></li>
         <li class="lli"><a  href="inicio.php"><h2>CHEFCITO.com</h2></a></li>
-        <li class="lli"><?php include("inicio/busqueda.php");?></li>
         <li class="lli"><?php include("inicio/btnbandeja.php");?></li>  
         <li class="lli"><?php include("inicio/btncuenta.php");?></li>
             <!-- Example single danger button -->
