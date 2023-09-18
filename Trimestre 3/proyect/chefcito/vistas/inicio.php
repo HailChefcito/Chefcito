@@ -21,8 +21,8 @@ session_start();
     <div class="hola">
       <?php include("inicio/cartas.php");?>  
       <ul class="ull">
-        <li class="lli"><img src='../resources/chefcito.jpg' class='img-fluid rounded-start' alt='...' style="width:25%;"></li>
-        <li class="lli"><a  href="inicio.php"><h2>CHEFCITO.com</h2></a></li>
+        <li class="lli"><img src='../resources/rATON2.png' alt='...' style="  width: 100px;position: fixed;margin-left:20px;"></li>
+        <li class="lli"><a  href="inicio.php"><h2 style="margin-left:110px;">CHEFCITO.com</h2></a></li>
         <li class="lli"><?php include("inicio/busqueda.php");?></li>
         <li class="lli"><?php include("inicio/btnbandeja.php");?></li>  
         <li class="lli"><?php include("inicio/btncuenta.php");?></li>

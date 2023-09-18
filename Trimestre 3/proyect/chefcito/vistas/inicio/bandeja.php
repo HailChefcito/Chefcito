@@ -5,6 +5,7 @@ if(isset($_SESSION["items_bandeja"]))
 {
         $totcantidad = 0;
         $totprecio = 0;
+        $pedidoDetalles = array();
     ?>	
     <div class='raya'></div>
     <table class="table">
@@ -18,6 +19,13 @@ if(isset($_SESSION["items_bandeja"]))
         foreach ($_SESSION["items_bandeja"] as $plato)
         {
             $plato_price = $plato["txtcantidad"]*$plato["valor_plato"];
+            $pedidoDetalles[] = array(
+                "idplato"=> $plato["id_plato"],
+                "nombre_plato" => $plato["nom_plato"],
+                "cantidad" => $plato["txtcantidad"],
+                "preciouni" => $plato["valor_plato"],
+                "precio_por_cantidad" => $plato_price
+            );  
     ?>
             <tr>
                 <td><?php echo $plato["nom_plato"]; ?></td>
@@ -29,14 +37,30 @@ if(isset($_SESSION["items_bandeja"]))
     <?php
             $totcantidad += $plato["txtcantidad"];
             $totprecio += ($plato["valor_plato"]*$plato["txtcantidad"]);
+            $_SESSION["pedidoDetalles"] = $pedidoDetalles;
         }
     ?>
 
     <tr>
+    <form action="../vistas/inicio.php?action=pay" method="post" onsubmit="return confirmarEnvio()"><!--onsubmit genera una funcion para script-->
         <td ><b>Total a pagar:</b></td>
         <td><b><?php echo $totcantidad; ?></b></td>
         <td><strong><?php echo "$ ".number_format($totprecio); ?></strong></td>
-        <td><a  class="btn btn-outline-success" href="inicio.php?action=pay">Pagar</a></td>
+            <input type="hidden" name="totprecio" value="<?php echo $totprecio; ?>">
+        <td><input type="submit" class="btn btn-outline-success" value="Pagar" ></td>
+        </form>
+        <script>
+        function confirmarEnvio() {
+            if (confirm('¿Estás seguro de que deseas conprar esto?')) {
+                mostrarAgradecimiento();
+                return true; // Envía el formulario
+            }
+            return false; // No envía el formulario si se cancela la confirmación
+            }
+            function mostrarAgradecimiento() {
+                alert('¡Gracias por su compra!! :)');
+            }
+        </script>
     </tr>
 
     </table>		

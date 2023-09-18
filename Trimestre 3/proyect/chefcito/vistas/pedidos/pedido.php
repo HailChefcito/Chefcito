@@ -29,15 +29,14 @@
                     <hr color=b3b3b3>
                     <?php
                     if(isset($_POST['btnbuscar']))
-                        {   
-                            $buscar =  $_POST['txtbuscar'];
-                            $queryMostrar=mysqli_query($conn, "SELECT idPedidos, emailUsuario, fechaPedido, horaPedido, valorPedido FROM pedidos WHERE idPedidos LIKE '".$buscar."'");
-                        }
+                    {   
+                        $buscar = $_POST['txtbuscar'];
+                        $queryMostrar = mysqli_query($conn, "SELECT idPedidos, emailUsuario, fechaPedido, horaPedido, valorPedido FROM pedidos WHERE idPedidos LIKE '%$buscar%'");
+                    }
                     else
-                        {
-                            $queryMostrar = mysqli_query($conn, "SELECT idPedidos, emailUsuario, fechaPedido, horaPedido, valorPedido FROM pedidos ORDER BY idPedidos ASC");
-                        }
-
+                    {
+                        $queryMostrar = mysqli_query($conn, "SELECT idPedidos, emailUsuario, fechaPedido, horaPedido, valorPedido FROM pedidos ORDER BY idPedidos ASC");
+                    }
                     while($mostrar = mysqli_fetch_array($queryMostrar))
                         {
                             

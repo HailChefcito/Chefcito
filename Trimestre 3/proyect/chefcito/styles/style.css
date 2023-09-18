@@ -123,9 +123,6 @@ li a {
   padding: 10px 16px;
   text-decoration: none;
 }
-
-
-
 .active {
   background-color: #2e3331;
 }
@@ -255,3 +252,4 @@ cursor: pointer;
   padding-top: 1%;
   padding-left: 27%;
 }
+

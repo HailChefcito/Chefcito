@@ -5,7 +5,7 @@
 
 if (isset($_POST['btnbuscar'])) {
     $buscar = $_POST['txtbuscar'];
-    $querychefcito = mysqli_query($conn, "SELECT categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias JOIN platos ON categorias.idCategPlatos = platos.idCategPlatos WHERE platos.nombrePlatos ORDER BY platos.nombrePlatos ASC LIKE '%" . $buscar . "%' ");
+    $querychefcito = mysqli_query($conn, "SELECT categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias JOIN platos ON categorias.idCategPlatos = platos.idCategPlatos WHERE platos.nombrePlatos LIKE '%" . $buscar . "%' ORDER BY platos.nombrePlatos ASC");
 } elseif (isset($_GET['categoria'])) {
     $categoriaSeleccionada = $_GET['categoria'];
     $querychefcito = mysqli_query($conn, "SELECT categorias.nombreCategorias, platos.nombrePlatos, platos.idPlatos, platos.descripcionPlatos, platos.valorPlatos FROM categorias JOIN platos ON categorias.idCategPlatos = platos.idCategPlatos WHERE categorias.nombreCategorias = '$categoriaSeleccionada'");
