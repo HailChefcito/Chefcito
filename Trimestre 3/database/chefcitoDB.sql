@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-09-2023 a las 06:17:54
+-- Tiempo de generación: 18-09-2023 a las 17:39:49
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `chefcito`
 --
+CREATE DATABASE IF NOT EXISTS `chefcito` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `chefcito`;
 
 -- --------------------------------------------------------
 
@@ -59,7 +61,7 @@ CREATE TABLE `ingredientes` (
 --
 
 INSERT INTO `ingredientes` (`idIngredientes`, `nombreIngrediente`) VALUES
-(1, 'Arroz'),
+(1, 'Arroz chino'),
 (2, 'Azucar'),
 (3, 'Sal'),
 (4, 'Pimienta'),
@@ -69,7 +71,7 @@ INSERT INTO `ingredientes` (`idIngredientes`, `nombreIngrediente`) VALUES
 (8, 'Cebolla'),
 (9, 'Pimiento'),
 (10, 'Tomate'),
-(11, 'Lechuga'),
+(11, 'Lechugaa'),
 (12, 'Pepino'),
 (13, 'Zanahoria'),
 (14, 'Papa'),
@@ -160,8 +162,7 @@ INSERT INTO `ingredientes` (`idIngredientes`, `nombreIngrediente`) VALUES
 (100, 'Champiñones'),
 (101, 'Arroz'),
 (102, 'Azucar'),
-(103, 'Sal'),
-(104, 'Pimienta');
+(103, 'Sal');
 
 -- --------------------------------------------------------
 
@@ -174,9 +175,6 @@ CREATE TABLE `pedidoproducto` (
   `idPlatos` int(5) NOT NULL,
   `cantidadPedidosPlatos` int(11) NOT NULL,
   `precioUnitarioPedidoPlatos` float(10,2) NOT NULL,
-  `subTotalPedidoPlatos` float(10,2) NOT NULL,
-  `descuentoPedidoPlatos` float(10,2) NOT NULL,
-  `ivaPedidoPlatos` float(10,2) NOT NULL,
   `totalPedidoPlatos` float(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
@@ -193,13 +191,6 @@ CREATE TABLE `pedidos` (
   `horaPedido` time NOT NULL,
   `valorPedido` float(10,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Volcado de datos para la tabla `pedidos`
---
-
-INSERT INTO `pedidos` (`idPedidos`, `emailUsuario`, `fechaPedido`, `horaPedido`, `valorPedido`) VALUES
-(12, 'asfgjbf@sañfaifb', '2023-08-01', '17:34:17', 243243.00);
 
 -- --------------------------------------------------------
 
@@ -223,33 +214,34 @@ CREATE TABLE `platos` (
 --
 
 INSERT INTO `platos` (`idPlatos`, `nombrePlatos`, `entradPlatos`, `salidaPlatos`, `stockPtatos`, `valorPlatos`, `idCategPlatos`, `descripcionPlatos`) VALUES
-(2, 'Plato Sopa de pollo', '', '', 0, 6000, 1, 'Varias piezas de pollo caparazones, pescuezo y si quieres, una pechuga. Todo sin piel. 6 a 8 tazas de agua 3 patatas medianas 1 zanahoria mediana 1 trozo de calabaza equivalente en tamaño a las patatas 1 cebollino 1 cebolla mediana 4 hojas de hierbabuena 1 guindilla opcional 1 pimiento mediano 1 tal'),
-(3, 'Plato de Verduras', '', '', 0, 6000, 1, 'Cocina Casera 1 Calabacín pequeño 100 gr de calabaza 2 Zanahorias medianas 1 puñado de vainas picadas Varias hojas de espinacas 1/2 Cebolla 1 Guindilla picante  opcional 2 tallos de cebolla verde cebollino, verdeo 1 tallo mediano de apio con sus hojas Varias hojas de cilantro Varias hojas de perejil'),
-(7, 'Paella de marisco', '', '', 0, 8500, 2, 'Calorías 340kcal 2 tazas de arroz 4 tazas de caldo de gambas ½ kg de calamares ½ kg de gambas frescas 1 puñado de conchas de mar almejas y mejillones 1 cebolla 1 tomate mediano ½ pimiento rojo 2 dientes de ajo ½ taza de guisantes 1 ramo de hojas de perejil fresco Aceite de oliva Sal Pimienta Coloran'),
-(8, 'Crema de calabaza', '', '', 0, 6000, 1, 'Calorías 50kcal 1 litro de caldo de verduras 1 cebolla mediana 1/2 pimiento 1 tallo mediano de apio Algunas hojas de cilantro fresco 500 gr de calabaza Sal al gusto Pimienta al gusto'),
-(9, 'Muslos de pollo al horno con patatas', '', '', 0, 9000, 2, 'Calorías 290kcal 2 muslos de pollo 2 patatas medianas 1/2 cebolla 1/2 pimiento rojo 1 cucharadita de estragón 1/2 cucharadita de comino molido Pimienta negra al gusto Sal al gusto Aceite de oliva'),
-(10, 'Merluza al horno', '', '', 0, 10000, 2, 'Calorías 136kcal 1 kilo de lomos o filetes de merluza 1 cebolla blanca 1 pimiento opcional 2 dientes de ajo Aceite vegetal 1 vaso de vino blanco seco Sal al gusto Pimienta molida al gusto'),
-(11, 'LAS COSTILLAS DE CERDO', '', '', 0, 8500, 2, 'Calorías 290kcal AutorDaniel 1 costillar de cerdo (12 costillas aproximadamente) 1 taza de salsa barbacoa, casera preferiblemente Sal Pimienta negra Pimienta blanca Pimienta de cayena en polvo Comino molido Romero Ajo en polvo Cebolla en polvo Azúcar morena'),
-(12, 'Papas Rellenas', '', '', 0, 1500, 1, 'PAPA RELLENA'),
-(13, 'Bloody Mary', '', '', 0, 15000, 3, 'Vodka 70 ml Zumo de tomate 210 ml Zumo de limón 15 ml Salsa Tabasco dos gotas Salsa Worcestershire tres gotas Pimienta negra molida Apio'),
-(14, 'Negroni', '', '', 0, 12000, 3, '300 ml de Campari, 300 ml de vermú rojo, 300 ml de ginebra, naranja.'),
-(15, 'Tom Collins', '', '', 0, 10000, 3, '50 ml de ginebra, 100 ml de zumo de limón, 100 ml de soda, 1 cucharada de azúcar, hielo.'),
-(16, 'Clericot o clericó', '', '', 0, 8000, 3, '33cl de vino blanco espumoso, 1 melocotón, 2 ciruelas,1 limón, 5ml de crema de Cassis y hielo'),
-(17, 'Rebujito', '', '', 0, 9000, 3, '75 ml de Vino Manzanilla, Fino, Montilla Moriles o similar, 500 ml de refresco de lima o gaseosa, 4 ramitas de Hierbabuena y Hielo abundante'),
-(18, 'Agua de Valencia', '', '', 0, 6500, 3, 'Zumo de naranja, ginebra, vodka y champagne o cava.'),
-(19, 'Sex on the beach', '', '', 0, 12000, 3, '45 ml de vodka, 15 ml de licor de melocotón, 15 ml de licor de frambuesa (opcional), 45 ml de arándanos rojos, 45 ml de zumo de naranja, naranja fresca para decorar.'),
-(20, 'Café irlandés', '', '', 0, 15000, 3, '2-2,5 partes de whisky irlandés, 4 partes de café filtrado, 1-2 cucharadas, aproximadamente, de azúcar blanco o moreno, 50 ml, aproximadamente, de nata o crema batida, semimontada.'),
-(21, 'Trufas de cava y frambuesa', '', '', 0, 10000, 4, 'Chocolate negro 70% de cacao 100 g Nata líquida 80 ml Cava 30 ml Azúcar glasé 25 g Mantequilla 5 g Frambuesas deshidratadas 25 g Cacao puro en polvo'),
-(22, ' CREMA DE CHOCOLATE', '', '', 0, 8000, 4, '1 aguacate maduro 3-4 onzas de chocolate negro (más del 75% de cacao) 2 dátiles'),
-(23, 'BATIDO DE VAINILLA Y MANZANA', '', '', 0, 10000, 4, '1 taza de bebida de soja ¼ de cucharadita de esencia de vainilla ½ manzana pelada Una pizca de canela en polvo'),
-(24, 'FRESAS CON CHOCOLATE CRUJIENTE', '', '', 0, 5000, 4, '500 g de fresas o fresones 6-7 onzas de chocolate negro (más del 75% de cacao) Un puñado de frutos secos (por ejemplo almendras, nueces y avellanas)'),
-(25, 'GALLETAS DE PLÁTANO, AVENA, CHOCOLATE Y AVELL', '', '', 0, 10000, 4, '1 taza de avena en copos 1 plátano mediano-grande, maduro 2-3 cucharadas de pepitas de chocolate puro 10-12 avellanas'),
-(26, 'YOGUR PRIMAVERAL', '', '', 0, 5000, 4, '2 yogures de soja naturales 8-10 fresas 10-12 frambuesas 14-16 arándanos Un puñadito de almendras laminadas o tostadas'),
-(27, 'TRUFITAS DE LIMÓN Y COCO', '', '', 0, 10000, 1, '1 taza de coco rallado el zumo y la ralladura de 1 limón ½ taza de almendras molidas (harina de almendras) 1 cucharada de mantequilla de cacahuete'),
-(28, 'TARTA DE MANZANA', '', '', 0, 11000, 4, '1 lámina de hojaldre (que no lleve grasas animales) 2 manzanas rojas Canela al gusto La ralladura de ½ limón'),
-(30, 'patatas fritas perfectas', '', '', 0, 5000, 5, '4 patatas medianas Aceite de oliva Sal'),
-(31, 'Patatas asadas al horno', '', '', 0, 5000, 5, '600 g de patatas para guarnición 2-4 dientes de ajo 2 cucharadas de aceite de oliva virgen extra 1 vaso de vino blanco (150 ml) 1 cucharadita de sal 1 manojito de tomillo Pimienta negra'),
-(8000, 'Plato Arroces con Pollo', '', '', 0, 7, 1, 'Calorías 300kcal 1 pollo mediano picado en trozos 2 tazas de arroz 4 tazas de caldo de pollo 1 tomate mediano 1/2 pimiento rojo 1 ají ó guindilla puede ser dulce o picante según tu antojo 1 puño pequeño de granos de maíz 1 trozo pequeño de chorizo calcula unos 2 cm de largo 1 cebolla mediana 2 dient');
+(2, 'Plato Sopa de pollo', '0', '0', 0, 6000, 1, 'Varias piezas de pollo caparazones, pescuezo y si quieres, una pechuga. Todo sin piel. 6 a 8 tazas de agua 3 patatas medianas 1 zanahoria mediana 1 trozo de calabaza equivalente en tamaño a las patatas 1 cebollino 1 cebolla mediana 4 hojas de hierbabuena 1 guindilla opcional 1 pimiento mediano 1 tal'),
+(3, 'Plato de Verduras', '0', '0', 0, 6000, 1, 'Cocina Casera 1 Calabacín pequeño 100 gr de calabaza 2 Zanahorias medianas 1 puñado de vainas picadas Varias hojas de espinacas 1/2 Cebolla 1 Guindilla picante  opcional 2 tallos de cebolla verde cebollino, verdeo 1 tallo mediano de apio con sus hojas Varias hojas de cilantro Varias hojas de perejil'),
+(7, 'Paella de marisco', '0', '0', 0, 8500, 2, 'Calorías 340kcal 2 tazas de arroz 4 tazas de caldo de gambas ½ kg de calamares ½ kg de gambas frescas 1 puñado de conchas de mar almejas y mejillones 1 cebolla 1 tomate mediano ½ pimiento rojo 2 dientes de ajo ½ taza de guisantes 1 ramo de hojas de perejil fresco Aceite de oliva Sal Pimienta Coloran'),
+(8, 'Crema de calabaza', '0', '0', 0, 6000, 1, 'Calorías 50kcal 1 litro de caldo de verduras 1 cebolla mediana 1/2 pimiento 1 tallo mediano de apio Algunas hojas de cilantro fresco 500 gr de calabaza Sal al gusto Pimienta al gusto'),
+(9, 'Muslos de pollo al horno con patatas', '0', '0', 0, 9000, 2, 'Calorías 290kcal 2 muslos de pollo 2 patatas medianas 1/2 cebolla 1/2 pimiento rojo 1 cucharadita de estragón 1/2 cucharadita de comino molido Pimienta negra al gusto Sal al gusto Aceite de oliva'),
+(10, 'Merluza al horno', '0', '0', 0, 10000, 2, 'Calorías 136kcal 1 kilo de lomos o filetes de merluza 1 cebolla blanca 1 pimiento opcional 2 dientes de ajo Aceite vegetal 1 vaso de vino blanco seco Sal al gusto Pimienta molida al gusto'),
+(11, 'LAS COSTILLAS DE CERDO', '0', '0', 0, 8500, 2, 'Calorías 290kcal AutorDaniel 1 costillar de cerdo (12 costillas aproximadamente) 1 taza de salsa barbacoa, casera preferiblemente Sal Pimienta negra Pimienta blanca Pimienta de cayena en polvo Comino molido Romero Ajo en polvo Cebolla en polvo Azúcar morena'),
+(12, 'Papas Rellenas', '0', '0', 0, 1500, 1, 'PAPA RELLENA'),
+(14, 'Negroni', '0', '0', 0, 12000, 3, '300 ml de Campari, 300 ml de vermú rojo, 300 ml de ginebra, naranja.'),
+(15, 'Tom Collins', '0', '0', 0, 10000, 3, '50 ml de ginebra, 100 ml de zumo de limón, 100 ml de soda, 1 cucharada de azúcar, hielo.'),
+(16, 'Clericot o clericó', '0', '0', 0, 8000, 3, '33cl de vino blanco espumoso, 1 melocotón, 2 ciruelas,1 limón, 5ml de crema de Cassis y hielo'),
+(17, 'Rebujito', '0', '0', 0, 9000, 3, '75 ml de Vino Manzanilla, Fino, Montilla Moriles o similar, 500 ml de refresco de lima o gaseosa, 4 ramitas de Hierbabuena y Hielo abundante'),
+(18, 'Agua de calzon', '0', '0', 0, 100000, 1, 'Agua fria con calzon de 3 dias'),
+(19, 'Sex on the beach', '0', '0', 0, 12000, 3, '45 ml de vodka, 15 ml de licor de melocotón, 15 ml de licor de frambuesa (opcional), 45 ml de arándanos rojos, 45 ml de zumo de naranja, naranja fresca para decorar.'),
+(20, 'Café irlandés', '0', '0', 0, 15000, 3, '2-2,5 partes de whisky irlandés, 4 partes de café filtrado, 1-2 cucharadas, aproximadamente, de azúcar blanco o moreno, 50 ml, aproximadamente, de nata o crema batida, semimontada.'),
+(21, 'Trufas de cava y frambuesa', '0', '0', 0, 10000, 4, 'Chocolate negro 70% de cacao 100 g Nata líquida 80 ml Cava 30 ml Azúcar glasé 25 g Mantequilla 5 g Frambuesas deshidratadas 25 g Cacao puro en polvo'),
+(22, ' CREMA DE CHOCOLATE', '0', '0', 0, 8000, 1, '1 aguacate maduro 3-4 onzas de chocolate negro (más del 75% de cacao) 2 dátiles'),
+(23, 'BATIDO DE VAINILLA Y MANZANA', '0', '0', 0, 10000, 4, '1 taza de bebida de soja ¼ de cucharadita de esencia de vainilla ½ manzana pelada Una pizca de canela en polvo'),
+(24, 'FRESAS CON CHOCOLATE CRUJIENTE', '0', '0', 0, 5000, 4, '500 g de fresas o fresones 6-7 onzas de chocolate negro (más del 75% de cacao) Un puñado de frutos secos (por ejemplo almendras, nueces y avellanas)'),
+(25, 'GALLETAS DE PLÁTANO, AVENA, CHOCOLATE Y AVELL', '0', '0', 0, 10000, 4, '1 taza de avena en copos 1 plátano mediano-grande, maduro 2-3 cucharadas de pepitas de chocolate puro 10-12 avellanas'),
+(26, 'YOGUR PRIMAVERAL', '0', '0', 0, 5000, 4, '2 yogures de soja naturales 8-10 fresas 10-12 frambuesas 14-16 arándanos Un puñadito de almendras laminadas o tostadas'),
+(27, 'TRUFITAS DE LIMÓN Y COCO', '0', '0', 0, 10000, 1, '1 taza de coco rallado el zumo y la ralladura de 1 limón ½ taza de almendras molidas (harina de almendras) 1 cucharada de mantequilla de cacahuete'),
+(28, 'TARTA DE MANZANA', '0', '0', 0, 11000, 4, '1 lámina de hojaldre (que no lleve grasas animales) 2 manzanas rojas Canela al gusto La ralladura de ½ limón'),
+(30, 'patatas fritas perfectas', '0', '0', 0, 5000, 5, '4 patatas medianas Aceite de oliva Sal'),
+(31, 'Patatas asadas al horno', '0', '0', 0, 5000, 5, '600 g de patatas para guarnición 2-4 dientes de ajo 2 cucharadas de aceite de oliva virgen extra 1 vaso de vino blanco (150 ml) 1 cucharadita de sal 1 manojito de tomillo Pimienta negra'),
+(32, 'Happy brownie ;D', '0', '0', 0, 10000, 1, 'Te hara viajar hasta el mas alla '),
+(33, 'sapos al horno ', '0', '0', 0, 1000, 5, 'esos sapos te haran saltar'),
+(34, 'Plato Arroces con Pollo', '0', '0', 0, 7, 1, 'Calorías 300kcal 1 pollo mediano picado en trozos 2 tazas de arroz 4 tazas de caldo de pollo 1 tomate mediano 1/2 pimiento rojo 1 ají ó guindilla puede ser dulce o picante según tu antojo 1 puño pequeño de granos de maíz 1 trozo pequeño de chorizo calcula unos 2 cm de largo 1 cebolla mediana 2 dient');
 
 -- --------------------------------------------------------
 
@@ -311,14 +303,6 @@ CREATE TABLE `sugerencia` (
   `valoracionSugerencia` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Volcado de datos para la tabla `sugerencia`
---
-
-INSERT INTO `sugerencia` (`idSugerencia`, `emailUsuario`, `descripcionSugerencia`, `valoracionSugerencia`) VALUES
-(0, 'sebachodiazp29@gmail.com', 'odio a miguel ', 1),
-(1, 'sebachodiazp29@gmail.com', 'holaaaa', 1200);
-
 -- --------------------------------------------------------
 
 --
@@ -360,10 +344,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`numeroTelefono`, `nombreUsuario`, `apellidoUsuario`, `direccion`, `emailUsuario`, `idSexoUsuario`, `idTipoUsuario`, `contraseña`) VALUES
-('18746194', 'saigfaoiyf', 'saufusafgapf', 'sfsaufgsafuaf', 'asfgjbf@sañfaifb', 1, 1, '123'),
-('2147483647', 'fabian ', 'gomez', 'calle 42142141b 2414csf-21431', 'fabiaanashesexoanal@gmail.com', 1, 2, 'fabian'),
-('520573252', 'asfasfsads', 'teewgwdgs', 'dsgsgsdg', 'sdgsdgdsgsd@sdgsdgdsgdsgegwg', 1, 1, '1234'),
-('1234567', 'juan', 'Rodriguez', 'calle tu corazon bb', 'sebachodiazp29@gmail.com', 2, 1, 'juan');
+('3013243008', 'CHEFCITO', 'S.A.S', 'NO SE', 'CHEFCITO@gmail.com', 2, 2, 'chefcito');
 
 -- --------------------------------------------------------
 
@@ -376,8 +357,6 @@ CREATE TABLE `ventas` (
   `idPedidos` int(5) NOT NULL,
   `fechaVenta` date NOT NULL,
   `horaVentas` time NOT NULL,
-  `subTotalVentas` float(12,2) NOT NULL,
-  `ivaVentas` float(12,2) NOT NULL,
   `totalVentas` float(12,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
@@ -468,6 +447,40 @@ ALTER TABLE `ventas`
   ADD KEY `idPedidos_idx` (`idPedidos`);
 
 --
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `pedidos`
+--
+ALTER TABLE `pedidos`
+  MODIFY `idPedidos` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `platos`
+--
+ALTER TABLE `platos`
+  MODIFY `idPlatos` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
+--
+-- AUTO_INCREMENT de la tabla `salidas`
+--
+ALTER TABLE `salidas`
+  MODIFY `idSalidas` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `sugerencia`
+--
+ALTER TABLE `sugerencia`
+  MODIFY `idSugerencia` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `ventas`
+--
+ALTER TABLE `ventas`
+  MODIFY `idVenta` int(20) NOT NULL AUTO_INCREMENT;
+
+--
 -- Restricciones para tablas volcadas
 --
 
@@ -477,12 +490,6 @@ ALTER TABLE `ventas`
 ALTER TABLE `pedidoproducto`
   ADD CONSTRAINT `idPedidos` FOREIGN KEY (`idPedidos`) REFERENCES `pedidos` (`idPedidos`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `idPlatos` FOREIGN KEY (`idPlatos`) REFERENCES `platos` (`idPlatos`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `pedidos`
---
-ALTER TABLE `pedidos`
-  ADD CONSTRAINT `emailUsuario` FOREIGN KEY (`emailUsuario`) REFERENCES `usuarios` (`emailUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `platos`
@@ -503,12 +510,6 @@ ALTER TABLE `platosingredientes`
 ALTER TABLE `salidas`
   ADD CONSTRAINT `idPlatos2` FOREIGN KEY (`idPlatos`) REFERENCES `platos` (`idPlatos`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `idVenta2` FOREIGN KEY (`idVenta`) REFERENCES `ventas` (`idVenta`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `sugerencia`
---
-ALTER TABLE `sugerencia`
-  ADD CONSTRAINT `emailUsuario1` FOREIGN KEY (`emailUsuario`) REFERENCES `usuarios` (`emailUsuario`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `usuarios`
